@@ -1,3 +1,14 @@
 __pycache__/
 *.pyc
 .venv/
+
+# Cloned third-party target repositories (analyzed locally)
+extra-repos/
+gta-peripherals/
+gta-projects/
+gta-repos/
+oot-decomp-projects/
+oot-peripherals/
+oot-port-projects/
+oot-ports-repos/
+rea-artifacts/
