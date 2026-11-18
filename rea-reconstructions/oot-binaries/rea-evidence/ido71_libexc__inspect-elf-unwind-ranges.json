@@ -1,0 +1,104 @@
+{
+  "evidence_id": "ev_d6b4677a29e388b17b59ee87c45a45de851b1e04de780d8adfb5bf7e0d96360a",
+  "subject": {
+    "name": "libexc.so",
+    "digest": {
+      "sha256": "dc55c860347d58595cb98e5773824ecf7a346d77cf16d8b83f0cabfbaa86b638"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+    "format": "elf",
+    "architecture": "mips"
+  },
+  "provider": {
+    "id": "rea-elf-unwind-ranges",
+    "name": "REA ELF unwind range parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_unwind_ranges",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+    "max_file_bytes": 67108864,
+    "max_ranges": 8192,
+    "offset": 0,
+    "limit": 256
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+      "sha256": "dc55c860347d58595cb98e5773824ecf7a346d77cf16d8b83f0cabfbaa86b638",
+      "bytes": 31596
+    },
+    "format": "elf32",
+    "byte_order": "big",
+    "machine": 8,
+    "type": 3,
+    "type_name": "shared",
+    "eh_frame": {
+      "status": "absent",
+      "source": null,
+      "location": null
+    },
+    "eh_frame_hdr": {
+      "status": "absent",
+      "location": null,
+      "version": null,
+      "eh_frame_pointer_encoding": null,
+      "fde_count_encoding": null,
+      "table_encoding": null,
+      "eh_frame_pointer": null,
+      "fde_count": null,
+      "table_entries": 0
+    },
+    "debug_frame": {
+      "status": "absent",
+      "location": null
+    },
+    "cies": [],
+    "ranges": [],
+    "page": {
+      "offset": 0,
+      "limit": 256,
+      "returned": 0,
+      "total": 0,
+      "next_offset": null
+    },
+    "coverage": {
+      "status": "complete",
+      "total_ranges": 0,
+      "total_cies": 0,
+      "ranges_with_symbols": 0,
+      "ranges_without_symbols": 0,
+      "eh_frame_hdr_agreement": "unavailable",
+      "examined_records": 0
+    },
+    "limitations": [
+      "No .eh_frame section or PT_GNU_EH_FRAME segment was declared.",
+      "No .eh_frame_hdr section or PT_GNU_EH_FRAME segment was declared.",
+      "CFA instructions are counted but not evaluated.",
+      ".debug_frame is absent; only .eh_frame was examined.",
+      "Symbol names, section names, and augmentation strings are target-derived and untrusted."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "No .eh_frame section or PT_GNU_EH_FRAME segment was declared.",
+    "No .eh_frame_hdr section or PT_GNU_EH_FRAME segment was declared.",
+    "CFA instructions are counted but not evaluated.",
+    ".debug_frame is absent; only .eh_frame was examined.",
+    "Symbol names, section names, and augmentation strings are target-derived and untrusted."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so"
+}

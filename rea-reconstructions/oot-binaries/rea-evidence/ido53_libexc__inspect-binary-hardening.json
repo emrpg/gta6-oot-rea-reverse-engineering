@@ -1,0 +1,181 @@
+{
+  "evidence_id": "ev_8e6b0738c4aca59f0569712558ce91cc9577871901a7c6d10e2072a83672abff",
+  "subject": {
+    "name": "libexc.so",
+    "digest": {
+      "sha256": "b59bf75bcbff1526ad4e3b2b49b313788a6e4c97df5b69b4bc2ddbd6726c5864"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libexc.so",
+    "format": "elf",
+    "architecture": "mips"
+  },
+  "provider": {
+    "id": "rea-binary-hardening",
+    "name": "REA binary hardening parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_binary_hardening",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libexc.so",
+    "max_file_bytes": 67108864
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libexc.so",
+      "sha256": "b59bf75bcbff1526ad4e3b2b49b313788a6e4c97df5b69b4bc2ddbd6726c5864",
+      "bytes": 29352
+    },
+    "format": "elf",
+    "images": [
+      {
+        "format": "elf",
+        "status": "parsed",
+        "reason": null,
+        "architecture": "mips",
+        "bits": 32,
+        "byte_order": "big",
+        "machine": 8,
+        "slice": null,
+        "rows": [
+          {
+            "property": "pie",
+            "state": "not_applicable",
+            "confidence": "observed",
+            "basis": "e_type is ET_DYN without PT_INTERP or DF_1_PIE, so this is a shared object rather than a PIE executable.",
+            "location": {
+              "offset": 16,
+              "bytes": 2
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "nx",
+            "state": "unknown",
+            "confidence": "observed",
+            "basis": "PT_GNU_STACK is absent.",
+            "location": null,
+            "note": "PT_GNU_STACK is absent. This inspection does not apply an architecture default.",
+            "next_probe": null
+          },
+          {
+            "property": "relro",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "PT_GNU_RELRO is absent.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "stack_protector",
+            "state": "unknown",
+            "confidence": "observed",
+            "basis": "No __stack_chk_fail symbol was found in the dynamic symbol table. A static or stripped image can omit that import while still using a stack protector.",
+            "location": null,
+            "note": "No __stack_chk_fail symbol was found in the dynamic symbol table. A static or stripped image can omit that import while still using a stack protector.",
+            "next_probe": null
+          },
+          {
+            "property": "fortify",
+            "state": "unknown",
+            "confidence": "observed",
+            "basis": "No fortify symbol was found in the dynamic symbol table. A static or stripped image can omit those imports while still using FORTIFY.",
+            "location": null,
+            "note": "No fortify symbol was found in the dynamic symbol table. A static or stripped image can omit those imports while still using FORTIFY.",
+            "next_probe": null
+          },
+          {
+            "property": "cet_ibt_shstk",
+            "state": "not_applicable",
+            "confidence": "observed",
+            "basis": "CET IBT and SHSTK notes apply to a different architecture.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "aarch64_bti_pac",
+            "state": "not_applicable",
+            "confidence": "observed",
+            "basis": "AArch64 BTI and PAC notes apply to a different architecture.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "rpath",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "DT_RPATH is absent.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "runpath",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "DT_RUNPATH is absent.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "stripped",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "A section header has type SHT_SYMTAB.",
+            "location": {
+              "offset": 27524,
+              "bytes": 40
+            },
+            "note": null,
+            "next_probe": null
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "This inspection reads headers, program tables, dynamic symbols, and imports. It does not execute the image or assess exploitability.",
+      "A missing stack-protector or fortify symbol does not establish that the protection is absent.",
+      "An undefined stack-protector or fortify symbol is a sign that some code uses the protection, not proof that all code does.",
+      "Authenticode and Mach-O code-signature rows report table or load-command presence, not signature validity.",
+      "PE control-flow guard state is the GuardFlags linker claim, not a check that CFG checks run.",
+      "Mach-O hardened runtime is not read here. inspect_signature owns CodeDirectory flags."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This inspection reads headers, program tables, dynamic symbols, and imports. It does not execute the image or assess exploitability.",
+    "A missing stack-protector or fortify symbol does not establish that the protection is absent.",
+    "An undefined stack-protector or fortify symbol is a sign that some code uses the protection, not proof that all code does.",
+    "Authenticode and Mach-O code-signature rows report table or load-command presence, not signature validity.",
+    "PE control-flow guard state is the GuardFlags linker claim, not a check that CFG checks run.",
+    "Mach-O hardened runtime is not read here. inspect_signature owns CodeDirectory flags."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libexc.so"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 16,
+      "end": 18
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 27524,
+      "end": 27564
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libexc.so"
+}

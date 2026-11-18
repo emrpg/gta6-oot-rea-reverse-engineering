@@ -1,0 +1,183 @@
+{
+  "evidence_id": "ev_ac44eb86fd1a4c0b449cc6656798250664fc826c33eb63d77dec30c76b0415c5",
+  "subject": {
+    "name": "gzinject",
+    "digest": {
+      "sha256": "e9a1df9b5fd966728e608b39b3acbdc27a9a0cbda99b58667d472baea3522e71"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-native-initializers",
+    "name": "REA ELF and Mach-O initializer parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_initializers",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+    "max_file_bytes": 67108864,
+    "offset": 0,
+    "limit": 64
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+      "sha256": "e9a1df9b5fd966728e608b39b3acbdc27a9a0cbda99b58667d472baea3522e71",
+      "bytes": 79968
+    },
+    "format": "elf",
+    "status": "parsed",
+    "applicability": "applicable",
+    "architecture": "x86_64",
+    "bits": 64,
+    "byte_order": "little",
+    "machine": 62,
+    "elf_type": 3,
+    "slice": null,
+    "coverage": {
+      "status": "complete",
+      "examined_entries": 4,
+      "total_entries": 4,
+      "returned_entries": 4,
+      "offset": 0,
+      "limit": 64
+    },
+    "entries": [
+      {
+        "index": 0,
+        "kind": "init",
+        "slot_va": "0x212c78",
+        "slot_file_offset": 76920,
+        "slot_bytes": 8,
+        "value_va": "0x1320",
+        "value_file_offset": 4896,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".init",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "raw",
+        "detail": "DT_INIT"
+      },
+      {
+        "index": 1,
+        "kind": "init_array",
+        "slot_va": "0x2129d0",
+        "slot_file_offset": 76240,
+        "slot_bytes": 8,
+        "value_va": "0x23a0",
+        "value_file_offset": 9120,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 2,
+        "kind": "fini",
+        "slot_va": "0x212c88",
+        "slot_file_offset": 76936,
+        "slot_bytes": 8,
+        "value_va": "0xf694",
+        "value_file_offset": 63124,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".fini",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "raw",
+        "detail": "DT_FINI"
+      },
+      {
+        "index": 3,
+        "kind": "fini_array",
+        "slot_va": "0x2129d8",
+        "slot_file_offset": 76248,
+        "slot_bytes": 8,
+        "value_va": "0x2360",
+        "value_file_offset": 9056,
+        "slot_section": {
+          "name": ".fini_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "relative_addend",
+        "detail": "DT_FINI_ARRAY"
+      }
+    ],
+    "limitations": [
+      "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+      "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+      "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+      "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+      ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+      "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+      "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+    "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+    "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+    "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+    ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+    "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+    "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 76920,
+      "end": 76928
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 76240,
+      "end": 76248
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 76936,
+      "end": 76944
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 76248,
+      "end": 76256
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject"
+}

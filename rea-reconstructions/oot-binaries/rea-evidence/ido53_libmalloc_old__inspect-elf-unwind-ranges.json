@@ -1,0 +1,104 @@
+{
+  "evidence_id": "ev_a367316760573f72a5684e596cf12aed5fb1b489398aee5befd8e5011628ff11",
+  "subject": {
+    "name": "libmalloc_old.so",
+    "digest": {
+      "sha256": "5742b9c8844a8055d10228fc2c02c62080907635761887378aa90f25ccfe3f03"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so",
+    "format": "elf",
+    "architecture": "mips"
+  },
+  "provider": {
+    "id": "rea-elf-unwind-ranges",
+    "name": "REA ELF unwind range parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_unwind_ranges",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so",
+    "max_file_bytes": 67108864,
+    "max_ranges": 8192,
+    "offset": 0,
+    "limit": 256
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so",
+      "sha256": "5742b9c8844a8055d10228fc2c02c62080907635761887378aa90f25ccfe3f03",
+      "bytes": 28216
+    },
+    "format": "elf32",
+    "byte_order": "big",
+    "machine": 8,
+    "type": 3,
+    "type_name": "shared",
+    "eh_frame": {
+      "status": "absent",
+      "source": null,
+      "location": null
+    },
+    "eh_frame_hdr": {
+      "status": "absent",
+      "location": null,
+      "version": null,
+      "eh_frame_pointer_encoding": null,
+      "fde_count_encoding": null,
+      "table_encoding": null,
+      "eh_frame_pointer": null,
+      "fde_count": null,
+      "table_entries": 0
+    },
+    "debug_frame": {
+      "status": "absent",
+      "location": null
+    },
+    "cies": [],
+    "ranges": [],
+    "page": {
+      "offset": 0,
+      "limit": 256,
+      "returned": 0,
+      "total": 0,
+      "next_offset": null
+    },
+    "coverage": {
+      "status": "complete",
+      "total_ranges": 0,
+      "total_cies": 0,
+      "ranges_with_symbols": 0,
+      "ranges_without_symbols": 0,
+      "eh_frame_hdr_agreement": "unavailable",
+      "examined_records": 0
+    },
+    "limitations": [
+      "No .eh_frame section or PT_GNU_EH_FRAME segment was declared.",
+      "No .eh_frame_hdr section or PT_GNU_EH_FRAME segment was declared.",
+      "CFA instructions are counted but not evaluated.",
+      ".debug_frame is absent; only .eh_frame was examined.",
+      "Symbol names, section names, and augmentation strings are target-derived and untrusted."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "No .eh_frame section or PT_GNU_EH_FRAME segment was declared.",
+    "No .eh_frame_hdr section or PT_GNU_EH_FRAME segment was declared.",
+    "CFA instructions are counted but not evaluated.",
+    ".debug_frame is absent; only .eh_frame was examined.",
+    "Symbol names, section names, and augmentation strings are target-derived and untrusted."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so"
+}

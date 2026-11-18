@@ -1,0 +1,65 @@
+{
+  "evidence_id": "ev_d1c8e39473e1cea4f99f22038c05f4ad1d4eedebca23d6e73c584e68488a776a",
+  "subject": {
+    "name": "libc.so.1",
+    "digest": {
+      "sha256": "864bfba8caeb1da01e653474f3123559743916149fb7bdefac1e1bdaf5bdf9bf"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libc.so.1",
+    "format": "elf",
+    "architecture": "mips"
+  },
+  "provider": {
+    "id": "rea-elf-notes",
+    "name": "REA ELF note parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_notes",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libc.so.1",
+    "max_file_bytes": 67108864,
+    "max_entries": 32
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libc.so.1",
+      "sha256": "864bfba8caeb1da01e653474f3123559743916149fb7bdefac1e1bdaf5bdf9bf",
+      "bytes": 1805232
+    },
+    "format": "elf32",
+    "byte_order": "big",
+    "machine": 8,
+    "type": 3,
+    "type_name": "shared",
+    "tables": [],
+    "entries": [],
+    "coverage": {
+      "status": "complete",
+      "examined_tables": 0,
+      "examined_entries": 0
+    },
+    "limitations": [
+      "No PT_NOTE program header or SHT_NOTE section was declared. That is not proof the image never carried notes in another container or overlay.",
+      "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "No PT_NOTE program header or SHT_NOTE section was declared. That is not proof the image never carried notes in another container or overlay.",
+    "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libc.so.1"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libc.so.1"
+}

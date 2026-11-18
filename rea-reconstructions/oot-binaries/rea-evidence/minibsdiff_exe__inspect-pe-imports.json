@@ -1,0 +1,560 @@
+{
+  "evidence_id": "ev_f95f2960d7eb12cc245b606384a4ab4b54f70d64fa5f4ecf81530838c767225d",
+  "subject": {
+    "name": "minibsdiff.exe",
+    "digest": {
+      "sha256": "f9b5e70be183ebebb74548e7af77654a9b5cbf769a2ca0e3c67574955a1ca4d9"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-pe-imports",
+    "name": "REA PE import parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_pe_imports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe",
+    "max_file_bytes": 67108864,
+    "max_dlls": 256,
+    "max_functions": 8192
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe",
+      "sha256": "f9b5e70be183ebebb74548e7af77654a9b5cbf769a2ca0e3c67574955a1ca4d9",
+      "bytes": 51200
+    },
+    "format": "pe32-plus",
+    "machine": 34404,
+    "bits": 64,
+    "architecture": "amd64",
+    "import_directory": {
+      "rva": 65536,
+      "size": 1980,
+      "locations": [
+        {
+          "offset": 46080,
+          "bytes": 60
+        }
+      ]
+    },
+    "delay_import_directory": null,
+    "imports": [
+      {
+        "index": 0,
+        "name": "KERNEL32.dll",
+        "name_rva": 67324,
+        "original_first_thunk_rva": 65596,
+        "first_thunk_rva": 66052,
+        "time_date_stamp": 0,
+        "forwarder_chain": 0,
+        "location": {
+          "offset": 46080,
+          "bytes": 20
+        },
+        "functions": [
+          {
+            "hint": 283,
+            "name": "DeleteCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 65596,
+            "iat_rva": 66052,
+            "thunk_hex": "103cc"
+          },
+          {
+            "hint": 319,
+            "name": "EnterCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 65604,
+            "iat_rva": 66060,
+            "thunk_hex": "103e4"
+          },
+          {
+            "hint": 630,
+            "name": "GetLastError",
+            "ordinal": null,
+            "ilt_rva": 65612,
+            "iat_rva": 66068,
+            "thunk_hex": "103fc"
+          },
+          {
+            "hint": 743,
+            "name": "GetStartupInfoA",
+            "ordinal": null,
+            "ilt_rva": 65620,
+            "iat_rva": 66076,
+            "thunk_hex": "1040c"
+          },
+          {
+            "hint": 892,
+            "name": "InitializeCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 65628,
+            "iat_rva": 66084,
+            "thunk_hex": "1041e"
+          },
+          {
+            "hint": 919,
+            "name": "IsDBCSLeadByteEx",
+            "ordinal": null,
+            "ilt_rva": 65636,
+            "iat_rva": 66092,
+            "thunk_hex": "1043a"
+          },
+          {
+            "hint": 984,
+            "name": "LeaveCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 65644,
+            "iat_rva": 66100,
+            "thunk_hex": "1044e"
+          },
+          {
+            "hint": 1036,
+            "name": "MultiByteToWideChar",
+            "ordinal": null,
+            "ilt_rva": 65652,
+            "iat_rva": 66108,
+            "thunk_hex": "10466"
+          },
+          {
+            "hint": 1394,
+            "name": "SetUnhandledExceptionFilter",
+            "ordinal": null,
+            "ilt_rva": 65660,
+            "iat_rva": 66116,
+            "thunk_hex": "1047c"
+          },
+          {
+            "hint": 1410,
+            "name": "Sleep",
+            "ordinal": null,
+            "ilt_rva": 65668,
+            "iat_rva": 66124,
+            "thunk_hex": "1049a"
+          },
+          {
+            "hint": 1445,
+            "name": "TlsGetValue",
+            "ordinal": null,
+            "ilt_rva": 65676,
+            "iat_rva": 66132,
+            "thunk_hex": "104a2"
+          },
+          {
+            "hint": 1492,
+            "name": "VirtualProtect",
+            "ordinal": null,
+            "ilt_rva": 65684,
+            "iat_rva": 66140,
+            "thunk_hex": "104b0"
+          },
+          {
+            "hint": 1494,
+            "name": "VirtualQuery",
+            "ordinal": null,
+            "ilt_rva": 65692,
+            "iat_rva": 66148,
+            "thunk_hex": "104c2"
+          },
+          {
+            "hint": 1547,
+            "name": "WideCharToMultiByte",
+            "ordinal": null,
+            "ilt_rva": 65700,
+            "iat_rva": 66156,
+            "thunk_hex": "104d2"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "name": "msvcrt.dll",
+        "name_rva": 67504,
+        "original_first_thunk_rva": 65716,
+        "first_thunk_rva": 66172,
+        "time_date_stamp": 0,
+        "forwarder_chain": 0,
+        "location": {
+          "offset": 46100,
+          "bytes": 20
+        },
+        "functions": [
+          {
+            "hint": 56,
+            "name": "__C_specific_handler",
+            "ordinal": null,
+            "ilt_rva": 65716,
+            "iat_rva": 66172,
+            "thunk_hex": "104e8"
+          },
+          {
+            "hint": 64,
+            "name": "___lc_codepage_func",
+            "ordinal": null,
+            "ilt_rva": 65724,
+            "iat_rva": 66180,
+            "thunk_hex": "10500"
+          },
+          {
+            "hint": 67,
+            "name": "___mb_cur_max_func",
+            "ordinal": null,
+            "ilt_rva": 65732,
+            "iat_rva": 66188,
+            "thunk_hex": "10516"
+          },
+          {
+            "hint": 82,
+            "name": "__getmainargs",
+            "ordinal": null,
+            "ilt_rva": 65740,
+            "iat_rva": 66196,
+            "thunk_hex": "1052c"
+          },
+          {
+            "hint": 83,
+            "name": "__initenv",
+            "ordinal": null,
+            "ilt_rva": 65748,
+            "iat_rva": 66204,
+            "thunk_hex": "1053c"
+          },
+          {
+            "hint": 84,
+            "name": "__iob_func",
+            "ordinal": null,
+            "ilt_rva": 65756,
+            "iat_rva": 66212,
+            "thunk_hex": "10548"
+          },
+          {
+            "hint": 98,
+            "name": "__set_app_type",
+            "ordinal": null,
+            "ilt_rva": 65764,
+            "iat_rva": 66220,
+            "thunk_hex": "10556"
+          },
+          {
+            "hint": 100,
+            "name": "__setusermatherr",
+            "ordinal": null,
+            "ilt_rva": 65772,
+            "iat_rva": 66228,
+            "thunk_hex": "10568"
+          },
+          {
+            "hint": 116,
+            "name": "_acmdln",
+            "ordinal": null,
+            "ilt_rva": 65780,
+            "iat_rva": 66236,
+            "thunk_hex": "1057c"
+          },
+          {
+            "hint": 124,
+            "name": "_amsg_exit",
+            "ordinal": null,
+            "ilt_rva": 65788,
+            "iat_rva": 66244,
+            "thunk_hex": "10586"
+          },
+          {
+            "hint": 142,
+            "name": "_cexit",
+            "ordinal": null,
+            "ilt_rva": 65796,
+            "iat_rva": 66252,
+            "thunk_hex": "10594"
+          },
+          {
+            "hint": 158,
+            "name": "_commode",
+            "ordinal": null,
+            "ilt_rva": 65804,
+            "iat_rva": 66260,
+            "thunk_hex": "1059e"
+          },
+          {
+            "hint": 203,
+            "name": "_errno",
+            "ordinal": null,
+            "ilt_rva": 65812,
+            "iat_rva": 66268,
+            "thunk_hex": "105aa"
+          },
+          {
+            "hint": 255,
+            "name": "_fmode",
+            "ordinal": null,
+            "ilt_rva": 65820,
+            "iat_rva": 66276,
+            "thunk_hex": "105b4"
+          },
+          {
+            "hint": 331,
+            "name": "_initterm",
+            "ordinal": null,
+            "ilt_rva": 65828,
+            "iat_rva": 66284,
+            "thunk_hex": "105be"
+          },
+          {
+            "hint": 443,
+            "name": "_lock",
+            "ordinal": null,
+            "ilt_rva": 65836,
+            "iat_rva": 66292,
+            "thunk_hex": "105ca"
+          },
+          {
+            "hint": 615,
+            "name": "_onexit",
+            "ordinal": null,
+            "ilt_rva": 65844,
+            "iat_rva": 66300,
+            "thunk_hex": "105d2"
+          },
+          {
+            "hint": 820,
+            "name": "_unlock",
+            "ordinal": null,
+            "ilt_rva": 65852,
+            "iat_rva": 66308,
+            "thunk_hex": "105dc"
+          },
+          {
+            "hint": 1055,
+            "name": "abort",
+            "ordinal": null,
+            "ilt_rva": 65860,
+            "iat_rva": 66316,
+            "thunk_hex": "105e6"
+          },
+          {
+            "hint": 1057,
+            "name": "calloc",
+            "ordinal": null,
+            "ilt_rva": 65868,
+            "iat_rva": 66324,
+            "thunk_hex": "105ee"
+          },
+          {
+            "hint": 1070,
+            "name": "exit",
+            "ordinal": null,
+            "ilt_rva": 65876,
+            "iat_rva": 66332,
+            "thunk_hex": "105f8"
+          },
+          {
+            "hint": 1074,
+            "name": "fclose",
+            "ordinal": null,
+            "ilt_rva": 65884,
+            "iat_rva": 66340,
+            "thunk_hex": "10600"
+          },
+          {
+            "hint": 1088,
+            "name": "fopen",
+            "ordinal": null,
+            "ilt_rva": 65892,
+            "iat_rva": 66348,
+            "thunk_hex": "1060a"
+          },
+          {
+            "hint": 1090,
+            "name": "fprintf",
+            "ordinal": null,
+            "ilt_rva": 65900,
+            "iat_rva": 66356,
+            "thunk_hex": "10612"
+          },
+          {
+            "hint": 1092,
+            "name": "fputc",
+            "ordinal": null,
+            "ilt_rva": 65908,
+            "iat_rva": 66364,
+            "thunk_hex": "1061c"
+          },
+          {
+            "hint": 1096,
+            "name": "fread",
+            "ordinal": null,
+            "ilt_rva": 65916,
+            "iat_rva": 66372,
+            "thunk_hex": "10624"
+          },
+          {
+            "hint": 1097,
+            "name": "free",
+            "ordinal": null,
+            "ilt_rva": 65924,
+            "iat_rva": 66380,
+            "thunk_hex": "1062c"
+          },
+          {
+            "hint": 1105,
+            "name": "fseek",
+            "ordinal": null,
+            "ilt_rva": 65932,
+            "iat_rva": 66388,
+            "thunk_hex": "10634"
+          },
+          {
+            "hint": 1107,
+            "name": "ftell",
+            "ordinal": null,
+            "ilt_rva": 65940,
+            "iat_rva": 66396,
+            "thunk_hex": "1063c"
+          },
+          {
+            "hint": 1110,
+            "name": "fwrite",
+            "ordinal": null,
+            "ilt_rva": 65948,
+            "iat_rva": 66404,
+            "thunk_hex": "10644"
+          },
+          {
+            "hint": 1151,
+            "name": "localeconv",
+            "ordinal": null,
+            "ilt_rva": 65956,
+            "iat_rva": 66412,
+            "thunk_hex": "1064e"
+          },
+          {
+            "hint": 1158,
+            "name": "malloc",
+            "ordinal": null,
+            "ilt_rva": 65964,
+            "iat_rva": 66420,
+            "thunk_hex": "1065c"
+          },
+          {
+            "hint": 1165,
+            "name": "memcmp",
+            "ordinal": null,
+            "ilt_rva": 65972,
+            "iat_rva": 66428,
+            "thunk_hex": "10666"
+          },
+          {
+            "hint": 1166,
+            "name": "memcpy",
+            "ordinal": null,
+            "ilt_rva": 65980,
+            "iat_rva": 66436,
+            "thunk_hex": "10670"
+          },
+          {
+            "hint": 1168,
+            "name": "memset",
+            "ordinal": null,
+            "ilt_rva": 65988,
+            "iat_rva": 66444,
+            "thunk_hex": "1067a"
+          },
+          {
+            "hint": 1198,
+            "name": "signal",
+            "ordinal": null,
+            "ilt_rva": 65996,
+            "iat_rva": 66452,
+            "thunk_hex": "10684"
+          },
+          {
+            "hint": 1219,
+            "name": "strerror",
+            "ordinal": null,
+            "ilt_rva": 66004,
+            "iat_rva": 66460,
+            "thunk_hex": "1068e"
+          },
+          {
+            "hint": 1221,
+            "name": "strlen",
+            "ordinal": null,
+            "ilt_rva": 66012,
+            "iat_rva": 66468,
+            "thunk_hex": "1069a"
+          },
+          {
+            "hint": 1224,
+            "name": "strncmp",
+            "ordinal": null,
+            "ilt_rva": 66020,
+            "iat_rva": 66476,
+            "thunk_hex": "106a4"
+          },
+          {
+            "hint": 1260,
+            "name": "vfprintf",
+            "ordinal": null,
+            "ilt_rva": 66028,
+            "iat_rva": 66484,
+            "thunk_hex": "106ae"
+          },
+          {
+            "hint": 1285,
+            "name": "wcslen",
+            "ordinal": null,
+            "ilt_rva": 66036,
+            "iat_rva": 66492,
+            "thunk_hex": "106ba"
+          }
+        ]
+      }
+    ],
+    "delay_imports": [],
+    "imphash": {
+      "algorithm": "pefile",
+      "md5": "119a988955dd004d77965f5db92cc8ab",
+      "reason": null
+    },
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_dlls": 2,
+      "imports": 55,
+      "delay_imports": 0
+    },
+    "issues": [],
+    "limitations": [
+      "Rows reproduce the PE import and delay-load directories; they do not establish that an import is bound, forwarded or reachable at runtime.",
+      "Bound import snapshots, the import address table as loaded, and export-forward resolution in another DLL remain unobserved."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows reproduce the PE import and delay-load directories; they do not establish that an import is bound, forwarded or reachable at runtime.",
+    "Bound import snapshots, the import address table as loaded, and export-forward resolution in another DLL remain unobserved."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 46080,
+      "end": 46140
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe"
+}

@@ -1,0 +1,714 @@
+{
+  "evidence_id": "ev_2183ff9f82edcb131b5493683c25e7cd513a54aadffe1738b930f561cc242387",
+  "subject": {
+    "name": "minibsdiff",
+    "digest": {
+      "sha256": "1c8baf4263919f3d36b39b1320f7c1a8a3b634ed0784df160abcbad217fa6901"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-elf-unwind-ranges",
+    "name": "REA ELF unwind range parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_unwind_ranges",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+    "max_file_bytes": 67108864,
+    "max_ranges": 8192,
+    "offset": 0,
+    "limit": 256
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+      "sha256": "1c8baf4263919f3d36b39b1320f7c1a8a3b634ed0784df160abcbad217fa6901",
+      "bytes": 22768
+    },
+    "format": "elf64",
+    "byte_order": "little",
+    "machine": 62,
+    "type": 3,
+    "type_name": "shared",
+    "eh_frame": {
+      "status": "present",
+      "source": "section",
+      "location": {
+        "offset": 17192,
+        "bytes": 792
+      }
+    },
+    "eh_frame_hdr": {
+      "status": "present",
+      "location": {
+        "offset": 16996,
+        "bytes": 196
+      },
+      "version": 1,
+      "eh_frame_pointer_encoding": {
+        "raw": 27,
+        "name": "pcrel|sdata4"
+      },
+      "fde_count_encoding": {
+        "raw": 3,
+        "name": "udata4"
+      },
+      "table_encoding": {
+        "raw": 59,
+        "name": "datarel|sdata4"
+      },
+      "eh_frame_pointer": "0x4328",
+      "fde_count": 23,
+      "table_entries": 23
+    },
+    "debug_frame": {
+      "status": "absent",
+      "location": null
+    },
+    "cies": [
+      {
+        "index": 0,
+        "version": 1,
+        "augmentation": {
+          "text": "zR",
+          "trust": "untrusted"
+        },
+        "code_alignment": 1,
+        "data_alignment": -8,
+        "return_address_register": 16,
+        "pointer_encoding": {
+          "raw": 27,
+          "name": "pcrel|sdata4"
+        },
+        "lsda_encoding": null,
+        "personality": null,
+        "signal_frame": false,
+        "b_key": false,
+        "instruction_bytes": 7,
+        "location": {
+          "offset": 17192,
+          "bytes": 24
+        }
+      },
+      {
+        "index": 1,
+        "version": 1,
+        "augmentation": {
+          "text": "zR",
+          "trust": "untrusted"
+        },
+        "code_alignment": 1,
+        "data_alignment": -8,
+        "return_address_register": 16,
+        "pointer_encoding": {
+          "raw": 27,
+          "name": "pcrel|sdata4"
+        },
+        "lsda_encoding": null,
+        "personality": null,
+        "signal_frame": false,
+        "b_key": false,
+        "instruction_bytes": 7,
+        "location": {
+          "offset": 17240,
+          "bytes": 24
+        }
+      }
+    ],
+    "ranges": [
+      {
+        "index": 0,
+        "start": "0x1120",
+        "end": "0x114b",
+        "size": "43",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17216,
+          "bytes": 24
+        }
+      },
+      {
+        "index": 1,
+        "start": "0x1030",
+        "end": "0x1110",
+        "size": "224",
+        "section": {
+          "text": ".plt",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17264,
+          "bytes": 40
+        }
+      },
+      {
+        "index": 2,
+        "start": "0x1110",
+        "end": "0x1118",
+        "size": "8",
+        "section": {
+          "text": ".plt.got",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17304,
+          "bytes": 24
+        }
+      },
+      {
+        "index": 3,
+        "start": "0x1259",
+        "end": "0x132c",
+        "size": "211",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17328,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 4,
+        "start": "0x132c",
+        "end": "0x13d2",
+        "size": "166",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17360,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 5,
+        "start": "0x13d2",
+        "end": "0x1417",
+        "size": "69",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17392,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 6,
+        "start": "0x1417",
+        "end": "0x16cf",
+        "size": "696",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17424,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 7,
+        "start": "0x16cf",
+        "end": "0x1d9e",
+        "size": "1743",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17456,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 8,
+        "start": "0x1d9e",
+        "end": "0x21e2",
+        "size": "1092",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17488,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 9,
+        "start": "0x21e2",
+        "end": "0x2242",
+        "size": "96",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17520,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 10,
+        "start": "0x2242",
+        "end": "0x2462",
+        "size": "544",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17552,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 11,
+        "start": "0x2462",
+        "end": "0x26d7",
+        "size": "629",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17584,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 12,
+        "start": "0x26d7",
+        "end": "0x26f6",
+        "size": "31",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17616,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 13,
+        "start": "0x26f6",
+        "end": "0x311c",
+        "size": "2598",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17648,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 14,
+        "start": "0x311c",
+        "end": "0x3154",
+        "size": "56",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17680,
+          "bytes": 28
+        }
+      },
+      {
+        "index": 15,
+        "start": "0x3154",
+        "end": "0x3187",
+        "size": "51",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17708,
+          "bytes": 28
+        }
+      },
+      {
+        "index": 16,
+        "start": "0x3187",
+        "end": "0x3283",
+        "size": "252",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17736,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 17,
+        "start": "0x3283",
+        "end": "0x32fd",
+        "size": "122",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17768,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 18,
+        "start": "0x32fd",
+        "end": "0x3481",
+        "size": "388",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17800,
+          "bytes": 28
+        }
+      },
+      {
+        "index": 19,
+        "start": "0x3481",
+        "end": "0x35e0",
+        "size": "351",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17828,
+          "bytes": 28
+        }
+      },
+      {
+        "index": 20,
+        "start": "0x35e0",
+        "end": "0x36b8",
+        "size": "216",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17856,
+          "bytes": 32
+        }
+      },
+      {
+        "index": 21,
+        "start": "0x36c0",
+        "end": "0x371d",
+        "size": "93",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17888,
+          "bytes": 72
+        }
+      },
+      {
+        "index": 22,
+        "start": "0x3720",
+        "end": "0x3721",
+        "size": "1",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 1,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 17960,
+          "bytes": 20
+        }
+      }
+    ],
+    "page": {
+      "offset": 0,
+      "limit": 256,
+      "returned": 23,
+      "total": 23,
+      "next_offset": null
+    },
+    "coverage": {
+      "status": "complete",
+      "total_ranges": 23,
+      "total_cies": 2,
+      "ranges_with_symbols": 0,
+      "ranges_without_symbols": 23,
+      "eh_frame_hdr_agreement": "agree",
+      "examined_records": 25
+    },
+    "limitations": [
+      "CFA instructions are counted but not evaluated.",
+      ".debug_frame is absent; only .eh_frame was examined.",
+      "Symbol names, section names, and augmentation strings are target-derived and untrusted."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "CFA instructions are counted but not evaluated.",
+    ".debug_frame is absent; only .eh_frame was examined.",
+    "Symbol names, section names, and augmentation strings are target-derived and untrusted."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17192,
+      "end": 17984
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 16996,
+      "end": 17192
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17192,
+      "end": 17216
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17240,
+      "end": 17264
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17216,
+      "end": 17240
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17264,
+      "end": 17304
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17304,
+      "end": 17328
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17328,
+      "end": 17360
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17360,
+      "end": 17392
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17392,
+      "end": 17424
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17424,
+      "end": 17456
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17456,
+      "end": 17488
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17488,
+      "end": 17520
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17520,
+      "end": 17552
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17552,
+      "end": 17584
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17584,
+      "end": 17616
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17616,
+      "end": 17648
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17648,
+      "end": 17680
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17680,
+      "end": 17708
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17708,
+      "end": 17736
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17736,
+      "end": 17768
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17768,
+      "end": 17800
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17800,
+      "end": 17828
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17828,
+      "end": 17856
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17856,
+      "end": 17888
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17888,
+      "end": 17960
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 17960,
+      "end": 17980
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff"
+}

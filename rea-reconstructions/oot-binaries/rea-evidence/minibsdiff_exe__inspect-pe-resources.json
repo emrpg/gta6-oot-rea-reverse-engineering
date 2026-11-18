@@ -1,0 +1,191 @@
+{
+  "evidence_id": "ev_5e99fdcf2d5dd2b57a6450798457cbb4a91fa670d0c10f46ec4b9917df897be8",
+  "subject": {
+    "name": "minibsdiff.exe",
+    "digest": {
+      "sha256": "f9b5e70be183ebebb74548e7af77654a9b5cbf769a2ca0e3c67574955a1ca4d9"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-pe-resources",
+    "name": "REA PE resource parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_pe_resources",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe",
+    "max_file_bytes": 67108864,
+    "max_entries": 16384
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe",
+      "sha256": "f9b5e70be183ebebb74548e7af77654a9b5cbf769a2ca0e3c67574955a1ca4d9",
+      "bytes": 51200
+    },
+    "format": "pe32-plus",
+    "machine": 34404,
+    "directory": {
+      "rva": 77824,
+      "location": {
+        "offset": 49152,
+        "bytes": 1256
+      },
+      "data_directory_location": {
+        "offset": 280,
+        "bytes": 8
+      }
+    },
+    "directories": [
+      {
+        "path": [],
+        "entry_locations": [],
+        "location": {
+          "offset": 49152,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      },
+      {
+        "path": [
+          {
+            "kind": "id",
+            "id": 24
+          }
+        ],
+        "entry_locations": [
+          {
+            "offset": 49168,
+            "bytes": 8
+          }
+        ],
+        "location": {
+          "offset": 49176,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      },
+      {
+        "path": [
+          {
+            "kind": "id",
+            "id": 24
+          },
+          {
+            "kind": "id",
+            "id": 1
+          }
+        ],
+        "entry_locations": [
+          {
+            "offset": 49168,
+            "bytes": 8
+          },
+          {
+            "offset": 49192,
+            "bytes": 8
+          }
+        ],
+        "location": {
+          "offset": 49200,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      }
+    ],
+    "resources": [
+      {
+        "index": 0,
+        "type": {
+          "kind": "id",
+          "id": 24
+        },
+        "name": {
+          "kind": "id",
+          "id": 1
+        },
+        "language": {
+          "kind": "id",
+          "id": 0
+        },
+        "entry_locations": [
+          {
+            "offset": 49168,
+            "bytes": 8
+          },
+          {
+            "offset": 49192,
+            "bytes": 8
+          },
+          {
+            "offset": 49216,
+            "bytes": 8
+          }
+        ],
+        "data_entry_location": {
+          "offset": 49224,
+          "bytes": 16
+        },
+        "code_page": 0,
+        "reserved": 0,
+        "payload": {
+          "rva": 77912,
+          "location": {
+            "offset": 49240,
+            "bytes": 1167
+          },
+          "sha256": "a73f26a8d504043f785d7360e8febf2eeb8522ec873a0d4dd5d1d4bfd1e67d3d"
+        }
+      }
+    ],
+    "icon_groups": [],
+    "coverage": {
+      "status": "complete",
+      "examined_entries": 3,
+      "resources": 1
+    },
+    "limitations": [
+      "Static PE32/PE32+ type/name/language resource inventory; payloads other than RT_GROUP_ICON remain opaque.",
+      "Icon candidates are resource-table relationships. Language fallback, image decoding and actual shell/window loading are not observed.",
+      "Exact shared byte ranges are retained; non-identical overlapping resource structures or payloads are rejected."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static PE32/PE32+ type/name/language resource inventory; payloads other than RT_GROUP_ICON remain opaque.",
+    "Icon candidates are resource-table relationships. Language fallback, image decoding and actual shell/window loading are not observed.",
+    "Exact shared byte ranges are retained; non-identical overlapping resource structures or payloads are rejected."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff.exe"
+}

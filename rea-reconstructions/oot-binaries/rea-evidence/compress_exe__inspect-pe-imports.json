@@ -1,0 +1,1072 @@
+{
+  "evidence_id": "ev_befc0587f5d01569b828daafa31e0c7408d090c8780221b6c3b428777a5f013b",
+  "subject": {
+    "name": "Compress.exe",
+    "digest": {
+      "sha256": "f6ad34f6cd6bfd01c397bb135eb3fef2ce8d80c60f45a957a25a0dcae5399d35"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-pe-imports",
+    "name": "REA PE import parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_pe_imports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+    "max_file_bytes": 67108864,
+    "max_dlls": 256,
+    "max_functions": 8192
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+      "sha256": "f6ad34f6cd6bfd01c397bb135eb3fef2ce8d80c60f45a957a25a0dcae5399d35",
+      "bytes": 517842
+    },
+    "format": "pe32-plus",
+    "machine": 34404,
+    "bits": 64,
+    "architecture": "amd64",
+    "import_directory": {
+      "rva": 131072,
+      "size": 4324,
+      "locations": [
+        {
+          "offset": 116736,
+          "bytes": 60
+        }
+      ]
+    },
+    "delay_import_directory": null,
+    "imports": [
+      {
+        "index": 0,
+        "name": "KERNEL32.dll",
+        "name_rva": 135108,
+        "original_first_thunk_rva": 131136,
+        "first_thunk_rva": 132104,
+        "time_date_stamp": 0,
+        "forwarder_chain": 0,
+        "location": {
+          "offset": 116736,
+          "bytes": 20
+        },
+        "functions": [
+          {
+            "hint": 150,
+            "name": "CloseHandle",
+            "ordinal": null,
+            "ilt_rva": 131136,
+            "iat_rva": 132104,
+            "thunk_hex": "207d0"
+          },
+          {
+            "hint": 207,
+            "name": "CreateEventA",
+            "ordinal": null,
+            "ilt_rva": 131144,
+            "iat_rva": 132112,
+            "thunk_hex": "207de"
+          },
+          {
+            "hint": 253,
+            "name": "CreateSemaphoreA",
+            "ordinal": null,
+            "ilt_rva": 131152,
+            "iat_rva": 132120,
+            "thunk_hex": "207ee"
+          },
+          {
+            "hint": 294,
+            "name": "DeleteCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 131160,
+            "iat_rva": 132128,
+            "thunk_hex": "20802"
+          },
+          {
+            "hint": 324,
+            "name": "DuplicateHandle",
+            "ordinal": null,
+            "ilt_rva": 131168,
+            "iat_rva": 132136,
+            "thunk_hex": "2081a"
+          },
+          {
+            "hint": 332,
+            "name": "EnterCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 131176,
+            "iat_rva": 132144,
+            "thunk_hex": "2082c"
+          },
+          {
+            "hint": 566,
+            "name": "GetCurrentProcess",
+            "ordinal": null,
+            "ilt_rva": 131184,
+            "iat_rva": 132152,
+            "thunk_hex": "20844"
+          },
+          {
+            "hint": 567,
+            "name": "GetCurrentProcessId",
+            "ordinal": null,
+            "ilt_rva": 131192,
+            "iat_rva": 132160,
+            "thunk_hex": "20858"
+          },
+          {
+            "hint": 570,
+            "name": "GetCurrentThread",
+            "ordinal": null,
+            "ilt_rva": 131200,
+            "iat_rva": 132168,
+            "thunk_hex": "2086e"
+          },
+          {
+            "hint": 571,
+            "name": "GetCurrentThreadId",
+            "ordinal": null,
+            "ilt_rva": 131208,
+            "iat_rva": 132176,
+            "thunk_hex": "20882"
+          },
+          {
+            "hint": 641,
+            "name": "GetHandleInformation",
+            "ordinal": null,
+            "ilt_rva": 131216,
+            "iat_rva": 132184,
+            "thunk_hex": "20898"
+          },
+          {
+            "hint": 645,
+            "name": "GetLastError",
+            "ordinal": null,
+            "ilt_rva": 131224,
+            "iat_rva": 132192,
+            "thunk_hex": "208b0"
+          },
+          {
+            "hint": 667,
+            "name": "GetModuleHandleA",
+            "ordinal": null,
+            "ilt_rva": 131232,
+            "iat_rva": 132200,
+            "thunk_hex": "208c0"
+          },
+          {
+            "hint": 670,
+            "name": "GetModuleHandleW",
+            "ordinal": null,
+            "ilt_rva": 131240,
+            "iat_rva": 132208,
+            "thunk_hex": "208d4"
+          },
+          {
+            "hint": 727,
+            "name": "GetProcAddress",
+            "ordinal": null,
+            "ilt_rva": 131248,
+            "iat_rva": 132216,
+            "thunk_hex": "208e8"
+          },
+          {
+            "hint": 728,
+            "name": "GetProcessAffinityMask",
+            "ordinal": null,
+            "ilt_rva": 131256,
+            "iat_rva": 132224,
+            "thunk_hex": "208fa"
+          },
+          {
+            "hint": 782,
+            "name": "GetSystemInfo",
+            "ordinal": null,
+            "ilt_rva": 131264,
+            "iat_rva": 132232,
+            "thunk_hex": "20914"
+          },
+          {
+            "hint": 788,
+            "name": "GetSystemTimeAsFileTime",
+            "ordinal": null,
+            "ilt_rva": 131272,
+            "iat_rva": 132240,
+            "thunk_hex": "20924"
+          },
+          {
+            "hint": 804,
+            "name": "GetThreadContext",
+            "ordinal": null,
+            "ilt_rva": 131280,
+            "iat_rva": 132248,
+            "thunk_hex": "2093e"
+          },
+          {
+            "hint": 815,
+            "name": "GetThreadPriority",
+            "ordinal": null,
+            "ilt_rva": 131288,
+            "iat_rva": 132256,
+            "thunk_hex": "20952"
+          },
+          {
+            "hint": 822,
+            "name": "GetTickCount",
+            "ordinal": null,
+            "ilt_rva": 131296,
+            "iat_rva": 132264,
+            "thunk_hex": "20966"
+          },
+          {
+            "hint": 915,
+            "name": "InitializeCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 131304,
+            "iat_rva": 132272,
+            "thunk_hex": "20976"
+          },
+          {
+            "hint": 942,
+            "name": "IsDBCSLeadByteEx",
+            "ordinal": null,
+            "ilt_rva": 131312,
+            "iat_rva": 132280,
+            "thunk_hex": "20992"
+          },
+          {
+            "hint": 943,
+            "name": "IsDebuggerPresent",
+            "ordinal": null,
+            "ilt_rva": 131320,
+            "iat_rva": 132288,
+            "thunk_hex": "209a6"
+          },
+          {
+            "hint": 951,
+            "name": "IsProcessorFeaturePresent",
+            "ordinal": null,
+            "ilt_rva": 131328,
+            "iat_rva": 132296,
+            "thunk_hex": "209ba"
+          },
+          {
+            "hint": 1009,
+            "name": "LeaveCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 131336,
+            "iat_rva": 132304,
+            "thunk_hex": "209d6"
+          },
+          {
+            "hint": 1016,
+            "name": "LoadLibraryW",
+            "ordinal": null,
+            "ilt_rva": 131344,
+            "iat_rva": 132312,
+            "thunk_hex": "209ee"
+          },
+          {
+            "hint": 1061,
+            "name": "MultiByteToWideChar",
+            "ordinal": null,
+            "ilt_rva": 131352,
+            "iat_rva": 132320,
+            "thunk_hex": "209fe"
+          },
+          {
+            "hint": 1094,
+            "name": "OpenProcess",
+            "ordinal": null,
+            "ilt_rva": 131360,
+            "iat_rva": 132328,
+            "thunk_hex": "20a14"
+          },
+          {
+            "hint": 1103,
+            "name": "OutputDebugStringA",
+            "ordinal": null,
+            "ilt_rva": 131368,
+            "iat_rva": 132336,
+            "thunk_hex": "20a22"
+          },
+          {
+            "hint": 1158,
+            "name": "QueryPerformanceCounter",
+            "ordinal": null,
+            "ilt_rva": 131376,
+            "iat_rva": 132344,
+            "thunk_hex": "20a38"
+          },
+          {
+            "hint": 1159,
+            "name": "QueryPerformanceFrequency",
+            "ordinal": null,
+            "ilt_rva": 131384,
+            "iat_rva": 132352,
+            "thunk_hex": "20a52"
+          },
+          {
+            "hint": 1181,
+            "name": "RaiseException",
+            "ordinal": null,
+            "ilt_rva": 131392,
+            "iat_rva": 132360,
+            "thunk_hex": "20a6e"
+          },
+          {
+            "hint": 1225,
+            "name": "ReleaseSemaphore",
+            "ordinal": null,
+            "ilt_rva": 131400,
+            "iat_rva": 132368,
+            "thunk_hex": "20a80"
+          },
+          {
+            "hint": 1243,
+            "name": "ResetEvent",
+            "ordinal": null,
+            "ilt_rva": 131408,
+            "iat_rva": 132376,
+            "thunk_hex": "20a94"
+          },
+          {
+            "hint": 1250,
+            "name": "ResumeThread",
+            "ordinal": null,
+            "ilt_rva": 131416,
+            "iat_rva": 132384,
+            "thunk_hex": "20aa2"
+          },
+          {
+            "hint": 1337,
+            "name": "SetEvent",
+            "ordinal": null,
+            "ilt_rva": 131424,
+            "iat_rva": 132392,
+            "thunk_hex": "20ab2"
+          },
+          {
+            "hint": 1366,
+            "name": "SetLastError",
+            "ordinal": null,
+            "ilt_rva": 131432,
+            "iat_rva": 132400,
+            "thunk_hex": "20abe"
+          },
+          {
+            "hint": 1377,
+            "name": "SetProcessAffinityMask",
+            "ordinal": null,
+            "ilt_rva": 131440,
+            "iat_rva": 132408,
+            "thunk_hex": "20ace"
+          },
+          {
+            "hint": 1403,
+            "name": "SetThreadContext",
+            "ordinal": null,
+            "ilt_rva": 131448,
+            "iat_rva": 132416,
+            "thunk_hex": "20ae8"
+          },
+          {
+            "hint": 1413,
+            "name": "SetThreadPriority",
+            "ordinal": null,
+            "ilt_rva": 131456,
+            "iat_rva": 132424,
+            "thunk_hex": "20afc"
+          },
+          {
+            "hint": 1429,
+            "name": "SetUnhandledExceptionFilter",
+            "ordinal": null,
+            "ilt_rva": 131464,
+            "iat_rva": 132432,
+            "thunk_hex": "20b10"
+          },
+          {
+            "hint": 1445,
+            "name": "Sleep",
+            "ordinal": null,
+            "ilt_rva": 131472,
+            "iat_rva": 132440,
+            "thunk_hex": "20b2e"
+          },
+          {
+            "hint": 1454,
+            "name": "SuspendThread",
+            "ordinal": null,
+            "ilt_rva": 131480,
+            "iat_rva": 132448,
+            "thunk_hex": "20b36"
+          },
+          {
+            "hint": 1461,
+            "name": "TerminateProcess",
+            "ordinal": null,
+            "ilt_rva": 131488,
+            "iat_rva": 132456,
+            "thunk_hex": "20b46"
+          },
+          {
+            "hint": 1479,
+            "name": "TlsAlloc",
+            "ordinal": null,
+            "ilt_rva": 131496,
+            "iat_rva": 132464,
+            "thunk_hex": "20b5a"
+          },
+          {
+            "hint": 1481,
+            "name": "TlsGetValue",
+            "ordinal": null,
+            "ilt_rva": 131504,
+            "iat_rva": 132472,
+            "thunk_hex": "20b66"
+          },
+          {
+            "hint": 1482,
+            "name": "TlsSetValue",
+            "ordinal": null,
+            "ilt_rva": 131512,
+            "iat_rva": 132480,
+            "thunk_hex": "20b74"
+          },
+          {
+            "hint": 1488,
+            "name": "TryEnterCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 131520,
+            "iat_rva": 132488,
+            "thunk_hex": "20b82"
+          },
+          {
+            "hint": 1528,
+            "name": "VirtualProtect",
+            "ordinal": null,
+            "ilt_rva": 131528,
+            "iat_rva": 132496,
+            "thunk_hex": "20b9c"
+          },
+          {
+            "hint": 1530,
+            "name": "VirtualQuery",
+            "ordinal": null,
+            "ilt_rva": 131536,
+            "iat_rva": 132504,
+            "thunk_hex": "20bae"
+          },
+          {
+            "hint": 1537,
+            "name": "WaitForMultipleObjects",
+            "ordinal": null,
+            "ilt_rva": 131544,
+            "iat_rva": 132512,
+            "thunk_hex": "20bbe"
+          },
+          {
+            "hint": 1539,
+            "name": "WaitForSingleObject",
+            "ordinal": null,
+            "ilt_rva": 131552,
+            "iat_rva": 132520,
+            "thunk_hex": "20bd8"
+          },
+          {
+            "hint": 1583,
+            "name": "WideCharToMultiByte",
+            "ordinal": null,
+            "ilt_rva": 131560,
+            "iat_rva": 132528,
+            "thunk_hex": "20bee"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "name": "msvcrt.dll",
+        "name_rva": 135384,
+        "original_first_thunk_rva": 131576,
+        "first_thunk_rva": 132544,
+        "time_date_stamp": 0,
+        "forwarder_chain": 0,
+        "location": {
+          "offset": 116756,
+          "bytes": 20
+        },
+        "functions": [
+          {
+            "hint": 89,
+            "name": "__C_specific_handler",
+            "ordinal": null,
+            "ilt_rva": 131576,
+            "iat_rva": 132544,
+            "thunk_hex": "20c04"
+          },
+          {
+            "hint": 109,
+            "name": "___lc_codepage_func",
+            "ordinal": null,
+            "ilt_rva": 131584,
+            "iat_rva": 132552,
+            "thunk_hex": "20c1c"
+          },
+          {
+            "hint": 112,
+            "name": "___mb_cur_max_func",
+            "ordinal": null,
+            "ilt_rva": 131592,
+            "iat_rva": 132560,
+            "thunk_hex": "20c32"
+          },
+          {
+            "hint": 127,
+            "name": "__getmainargs",
+            "ordinal": null,
+            "ilt_rva": 131600,
+            "iat_rva": 132568,
+            "thunk_hex": "20c48"
+          },
+          {
+            "hint": 128,
+            "name": "__initenv",
+            "ordinal": null,
+            "ilt_rva": 131608,
+            "iat_rva": 132576,
+            "thunk_hex": "20c58"
+          },
+          {
+            "hint": 129,
+            "name": "__iob_func",
+            "ordinal": null,
+            "ilt_rva": 131616,
+            "iat_rva": 132584,
+            "thunk_hex": "20c64"
+          },
+          {
+            "hint": 146,
+            "name": "__set_app_type",
+            "ordinal": null,
+            "ilt_rva": 131624,
+            "iat_rva": 132592,
+            "thunk_hex": "20c72"
+          },
+          {
+            "hint": 148,
+            "name": "__setusermatherr",
+            "ordinal": null,
+            "ilt_rva": 131632,
+            "iat_rva": 132600,
+            "thunk_hex": "20c84"
+          },
+          {
+            "hint": 181,
+            "name": "_amsg_exit",
+            "ordinal": null,
+            "ilt_rva": 131640,
+            "iat_rva": 132608,
+            "thunk_hex": "20c98"
+          },
+          {
+            "hint": 197,
+            "name": "_beginthreadex",
+            "ordinal": null,
+            "ilt_rva": 131648,
+            "iat_rva": 132616,
+            "thunk_hex": "20ca6"
+          },
+          {
+            "hint": 202,
+            "name": "_cexit",
+            "ordinal": null,
+            "ilt_rva": 131656,
+            "iat_rva": 132624,
+            "thunk_hex": "20cb8"
+          },
+          {
+            "hint": 220,
+            "name": "_commode",
+            "ordinal": null,
+            "ilt_rva": 131664,
+            "iat_rva": 132632,
+            "thunk_hex": "20cc2"
+          },
+          {
+            "hint": 266,
+            "name": "_endthreadex",
+            "ordinal": null,
+            "ilt_rva": 131672,
+            "iat_rva": 132640,
+            "thunk_hex": "20cce"
+          },
+          {
+            "hint": 270,
+            "name": "_errno",
+            "ordinal": null,
+            "ilt_rva": 131680,
+            "iat_rva": 132648,
+            "thunk_hex": "20cde"
+          },
+          {
+            "hint": 322,
+            "name": "_fmode",
+            "ordinal": null,
+            "ilt_rva": 131688,
+            "iat_rva": 132656,
+            "thunk_hex": "20ce8"
+          },
+          {
+            "hint": 416,
+            "name": "_initterm",
+            "ordinal": null,
+            "ilt_rva": 131696,
+            "iat_rva": 132664,
+            "thunk_hex": "20cf2"
+          },
+          {
+            "hint": 525,
+            "name": "_lock",
+            "ordinal": null,
+            "ilt_rva": 131704,
+            "iat_rva": 132672,
+            "thunk_hex": "20cfe"
+          },
+          {
+            "hint": 762,
+            "name": "_setjmp",
+            "ordinal": null,
+            "ilt_rva": 131712,
+            "iat_rva": 132680,
+            "thunk_hex": "20d06"
+          },
+          {
+            "hint": 823,
+            "name": "_strdup",
+            "ordinal": null,
+            "ilt_rva": 131720,
+            "iat_rva": 132688,
+            "thunk_hex": "20d10"
+          },
+          {
+            "hint": 858,
+            "name": "_strtoi64",
+            "ordinal": null,
+            "ilt_rva": 131728,
+            "iat_rva": 132696,
+            "thunk_hex": "20d1a"
+          },
+          {
+            "hint": 864,
+            "name": "_strtoui64",
+            "ordinal": null,
+            "ilt_rva": 131736,
+            "iat_rva": 132704,
+            "thunk_hex": "20d26"
+          },
+          {
+            "hint": 923,
+            "name": "_unlock",
+            "ordinal": null,
+            "ilt_rva": 131744,
+            "iat_rva": 132712,
+            "thunk_hex": "20d34"
+          },
+          {
+            "hint": 948,
+            "name": "_vscprintf",
+            "ordinal": null,
+            "ilt_rva": 131752,
+            "iat_rva": 132720,
+            "thunk_hex": "20d3e"
+          },
+          {
+            "hint": 954,
+            "name": "_vsnprintf",
+            "ordinal": null,
+            "ilt_rva": 131760,
+            "iat_rva": 132728,
+            "thunk_hex": "20d4c"
+          },
+          {
+            "hint": 1098,
+            "name": "_write",
+            "ordinal": null,
+            "ilt_rva": 131768,
+            "iat_rva": 132736,
+            "thunk_hex": "20d5a"
+          },
+          {
+            "hint": 1149,
+            "name": "abort",
+            "ordinal": null,
+            "ilt_rva": 131776,
+            "iat_rva": 132744,
+            "thunk_hex": "20d64"
+          },
+          {
+            "hint": 1159,
+            "name": "atexit",
+            "ordinal": null,
+            "ilt_rva": 131784,
+            "iat_rva": 132752,
+            "thunk_hex": "20d6c"
+          },
+          {
+            "hint": 1166,
+            "name": "calloc",
+            "ordinal": null,
+            "ilt_rva": 131792,
+            "iat_rva": 132760,
+            "thunk_hex": "20d76"
+          },
+          {
+            "hint": 1180,
+            "name": "exit",
+            "ordinal": null,
+            "ilt_rva": 131800,
+            "iat_rva": 132768,
+            "thunk_hex": "20d80"
+          },
+          {
+            "hint": 1184,
+            "name": "fclose",
+            "ordinal": null,
+            "ilt_rva": 131808,
+            "iat_rva": 132776,
+            "thunk_hex": "20d88"
+          },
+          {
+            "hint": 1187,
+            "name": "fflush",
+            "ordinal": null,
+            "ilt_rva": 131816,
+            "iat_rva": 132784,
+            "thunk_hex": "20d92"
+          },
+          {
+            "hint": 1197,
+            "name": "fopen",
+            "ordinal": null,
+            "ilt_rva": 131824,
+            "iat_rva": 132792,
+            "thunk_hex": "20d9c"
+          },
+          {
+            "hint": 1201,
+            "name": "fprintf",
+            "ordinal": null,
+            "ilt_rva": 131832,
+            "iat_rva": 132800,
+            "thunk_hex": "20da4"
+          },
+          {
+            "hint": 1203,
+            "name": "fputc",
+            "ordinal": null,
+            "ilt_rva": 131840,
+            "iat_rva": 132808,
+            "thunk_hex": "20dae"
+          },
+          {
+            "hint": 1207,
+            "name": "fread",
+            "ordinal": null,
+            "ilt_rva": 131848,
+            "iat_rva": 132816,
+            "thunk_hex": "20db6"
+          },
+          {
+            "hint": 1208,
+            "name": "free",
+            "ordinal": null,
+            "ilt_rva": 131856,
+            "iat_rva": 132824,
+            "thunk_hex": "20dbe"
+          },
+          {
+            "hint": 1215,
+            "name": "fseek",
+            "ordinal": null,
+            "ilt_rva": 131864,
+            "iat_rva": 132832,
+            "thunk_hex": "20dc6"
+          },
+          {
+            "hint": 1218,
+            "name": "ftell",
+            "ordinal": null,
+            "ilt_rva": 131872,
+            "iat_rva": 132840,
+            "thunk_hex": "20dce"
+          },
+          {
+            "hint": 1223,
+            "name": "fwrite",
+            "ordinal": null,
+            "ilt_rva": 131880,
+            "iat_rva": 132848,
+            "thunk_hex": "20dd6"
+          },
+          {
+            "hint": 1226,
+            "name": "getc",
+            "ordinal": null,
+            "ilt_rva": 131888,
+            "iat_rva": 132856,
+            "thunk_hex": "20de0"
+          },
+          {
+            "hint": 1244,
+            "name": "isspace",
+            "ordinal": null,
+            "ilt_rva": 131896,
+            "iat_rva": 132864,
+            "thunk_hex": "20de8"
+          },
+          {
+            "hint": 1259,
+            "name": "isxdigit",
+            "ordinal": null,
+            "ilt_rva": 131904,
+            "iat_rva": 132872,
+            "thunk_hex": "20df2"
+          },
+          {
+            "hint": 1263,
+            "name": "localeconv",
+            "ordinal": null,
+            "ilt_rva": 131912,
+            "iat_rva": 132880,
+            "thunk_hex": "20dfe"
+          },
+          {
+            "hint": 1269,
+            "name": "longjmp",
+            "ordinal": null,
+            "ilt_rva": 131920,
+            "iat_rva": 132888,
+            "thunk_hex": "20e0c"
+          },
+          {
+            "hint": 1270,
+            "name": "malloc",
+            "ordinal": null,
+            "ilt_rva": 131928,
+            "iat_rva": 132896,
+            "thunk_hex": "20e16"
+          },
+          {
+            "hint": 1278,
+            "name": "memcmp",
+            "ordinal": null,
+            "ilt_rva": 131936,
+            "iat_rva": 132904,
+            "thunk_hex": "20e20"
+          },
+          {
+            "hint": 1279,
+            "name": "memcpy",
+            "ordinal": null,
+            "ilt_rva": 131944,
+            "iat_rva": 132912,
+            "thunk_hex": "20e2a"
+          },
+          {
+            "hint": 1280,
+            "name": "memmove",
+            "ordinal": null,
+            "ilt_rva": 131952,
+            "iat_rva": 132920,
+            "thunk_hex": "20e34"
+          },
+          {
+            "hint": 1281,
+            "name": "memset",
+            "ordinal": null,
+            "ilt_rva": 131960,
+            "iat_rva": 132928,
+            "thunk_hex": "20e3e"
+          },
+          {
+            "hint": 1286,
+            "name": "perror",
+            "ordinal": null,
+            "ilt_rva": 131968,
+            "iat_rva": 132936,
+            "thunk_hex": "20e48"
+          },
+          {
+            "hint": 1290,
+            "name": "printf",
+            "ordinal": null,
+            "ilt_rva": 131976,
+            "iat_rva": 132944,
+            "thunk_hex": "20e52"
+          },
+          {
+            "hint": 1293,
+            "name": "putchar",
+            "ordinal": null,
+            "ilt_rva": 131984,
+            "iat_rva": 132952,
+            "thunk_hex": "20e5c"
+          },
+          {
+            "hint": 1294,
+            "name": "puts",
+            "ordinal": null,
+            "ilt_rva": 131992,
+            "iat_rva": 132960,
+            "thunk_hex": "20e66"
+          },
+          {
+            "hint": 1301,
+            "name": "realloc",
+            "ordinal": null,
+            "ilt_rva": 132000,
+            "iat_rva": 132968,
+            "thunk_hex": "20e6e"
+          },
+          {
+            "hint": 1312,
+            "name": "signal",
+            "ordinal": null,
+            "ilt_rva": 132008,
+            "iat_rva": 132976,
+            "thunk_hex": "20e78"
+          },
+          {
+            "hint": 1329,
+            "name": "strcpy",
+            "ordinal": null,
+            "ilt_rva": 132016,
+            "iat_rva": 132984,
+            "thunk_hex": "20e82"
+          },
+          {
+            "hint": 1332,
+            "name": "strerror",
+            "ordinal": null,
+            "ilt_rva": 132024,
+            "iat_rva": 132992,
+            "thunk_hex": "20e8c"
+          },
+          {
+            "hint": 1334,
+            "name": "strlen",
+            "ordinal": null,
+            "ilt_rva": 132032,
+            "iat_rva": 133000,
+            "thunk_hex": "20e98"
+          },
+          {
+            "hint": 1337,
+            "name": "strncmp",
+            "ordinal": null,
+            "ilt_rva": 132040,
+            "iat_rva": 133008,
+            "thunk_hex": "20ea2"
+          },
+          {
+            "hint": 1347,
+            "name": "strtol",
+            "ordinal": null,
+            "ilt_rva": 132048,
+            "iat_rva": 133016,
+            "thunk_hex": "20eac"
+          },
+          {
+            "hint": 1348,
+            "name": "strtoul",
+            "ordinal": null,
+            "ilt_rva": 132056,
+            "iat_rva": 133024,
+            "thunk_hex": "20eb6"
+          },
+          {
+            "hint": 1366,
+            "name": "tolower",
+            "ordinal": null,
+            "ilt_rva": 132064,
+            "iat_rva": 133032,
+            "thunk_hex": "20ec0"
+          },
+          {
+            "hint": 1370,
+            "name": "ungetc",
+            "ordinal": null,
+            "ilt_rva": 132072,
+            "iat_rva": 133040,
+            "thunk_hex": "20eca"
+          },
+          {
+            "hint": 1373,
+            "name": "vfprintf",
+            "ordinal": null,
+            "ilt_rva": 132080,
+            "iat_rva": 133048,
+            "thunk_hex": "20ed4"
+          },
+          {
+            "hint": 1400,
+            "name": "wcslen",
+            "ordinal": null,
+            "ilt_rva": 132088,
+            "iat_rva": 133056,
+            "thunk_hex": "20ee0"
+          }
+        ]
+      }
+    ],
+    "delay_imports": [],
+    "imphash": {
+      "algorithm": "pefile",
+      "md5": "502e7ff651a86d0ffbc9a791b95dc8c1",
+      "reason": null
+    },
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_dlls": 2,
+      "imports": 119,
+      "delay_imports": 0
+    },
+    "issues": [],
+    "limitations": [
+      "Rows reproduce the PE import and delay-load directories; they do not establish that an import is bound, forwarded or reachable at runtime.",
+      "Bound import snapshots, the import address table as loaded, and export-forward resolution in another DLL remain unobserved."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows reproduce the PE import and delay-load directories; they do not establish that an import is bound, forwarded or reachable at runtime.",
+    "Bound import snapshots, the import address table as loaded, and export-forward resolution in another DLL remain unobserved."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 116736,
+      "end": 116796
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe"
+}

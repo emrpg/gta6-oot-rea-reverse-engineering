@@ -1,0 +1,195 @@
+{
+  "evidence_id": "ev_cc0ff199f3506449c19cf17692ea599416574c8c6518afc66347820da640f2b4",
+  "subject": {
+    "name": "n3dsdisasm",
+    "digest": {
+      "sha256": "131fd076eb2ff6c2c1f311b30754bfc3b0adc4b134486207d179c2126a73d037"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-native-initializers",
+    "name": "REA ELF and Mach-O initializer parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_initializers",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm",
+    "max_file_bytes": 67108864,
+    "offset": 0,
+    "limit": 64
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm",
+      "sha256": "131fd076eb2ff6c2c1f311b30754bfc3b0adc4b134486207d179c2126a73d037",
+      "bytes": 10203928
+    },
+    "format": "elf",
+    "status": "parsed",
+    "applicability": "applicable",
+    "architecture": "x86_64",
+    "bits": 64,
+    "byte_order": "little",
+    "machine": 62,
+    "elf_type": 3,
+    "slice": null,
+    "coverage": {
+      "status": "complete",
+      "examined_entries": 4,
+      "total_entries": 4,
+      "returned_entries": 4,
+      "offset": 0,
+      "limit": 64
+    },
+    "entries": [
+      {
+        "index": 0,
+        "kind": "init",
+        "slot_va": "0xb6ecc8",
+        "slot_file_offset": 9891016,
+        "slot_bytes": 8,
+        "value_va": "0x1f5a18",
+        "value_file_offset": 2054680,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".init",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_init",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "raw",
+        "detail": "DT_INIT"
+      },
+      {
+        "index": 1,
+        "kind": "init_array",
+        "slot_va": "0xa2ec70",
+        "slot_file_offset": 8580208,
+        "slot_bytes": 8,
+        "value_va": "0x1f5d90",
+        "value_file_offset": 2055568,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "frame_dummy",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 2,
+        "kind": "fini",
+        "slot_va": "0xb6ecd8",
+        "slot_file_offset": 9891032,
+        "slot_bytes": 8,
+        "value_va": "0x363004",
+        "value_file_offset": 3551236,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".fini",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_fini",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "raw",
+        "detail": "DT_FINI"
+      },
+      {
+        "index": 3,
+        "kind": "fini_array",
+        "slot_va": "0xa2ec78",
+        "slot_file_offset": 8580216,
+        "slot_bytes": 8,
+        "value_va": "0x1f5d50",
+        "value_file_offset": 2055504,
+        "slot_section": {
+          "name": ".fini_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "__do_global_dtors_aux",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_FINI_ARRAY"
+      }
+    ],
+    "limitations": [
+      "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+      "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+      "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+      "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+      ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+      "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+      "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+    "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+    "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+    "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+    ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+    "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+    "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 9891016,
+      "end": 9891024
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8580208,
+      "end": 8580216
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 9891032,
+      "end": 9891040
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8580216,
+      "end": 8580224
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm"
+}

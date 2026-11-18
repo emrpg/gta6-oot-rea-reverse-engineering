@@ -1,0 +1,183 @@
+{
+  "evidence_id": "ev_86a7844e448f89c292731ac59de1e4cbcd4a13b516df45bda059dc172dea1beb",
+  "subject": {
+    "name": "Decompress",
+    "digest": {
+      "sha256": "a28c212a86bd9daff0ca73e2fd700a3e7885fbff6ef69eb4efb0fd0174b93801"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-native-initializers",
+    "name": "REA ELF and Mach-O initializer parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_initializers",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+    "max_file_bytes": 67108864,
+    "offset": 0,
+    "limit": 64
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+      "sha256": "a28c212a86bd9daff0ca73e2fd700a3e7885fbff6ef69eb4efb0fd0174b93801",
+      "bytes": 14520
+    },
+    "format": "elf",
+    "status": "parsed",
+    "applicability": "applicable",
+    "architecture": "x86_64",
+    "bits": 64,
+    "byte_order": "little",
+    "machine": 62,
+    "elf_type": 3,
+    "slice": null,
+    "coverage": {
+      "status": "complete",
+      "examined_entries": 4,
+      "total_entries": 4,
+      "returned_entries": 4,
+      "offset": 0,
+      "limit": 64
+    },
+    "entries": [
+      {
+        "index": 0,
+        "kind": "init",
+        "slot_va": "0x3e10",
+        "slot_file_offset": 11792,
+        "slot_bytes": 8,
+        "value_va": "0x1000",
+        "value_file_offset": 4096,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".init",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "raw",
+        "detail": "DT_INIT"
+      },
+      {
+        "index": 1,
+        "kind": "init_array",
+        "slot_va": "0x3dd8",
+        "slot_file_offset": 11736,
+        "slot_bytes": 8,
+        "value_va": "0x14b0",
+        "value_file_offset": 5296,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 2,
+        "kind": "fini",
+        "slot_va": "0x3e20",
+        "slot_file_offset": 11808,
+        "slot_bytes": 8,
+        "value_va": "0x1ea8",
+        "value_file_offset": 7848,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".fini",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "raw",
+        "detail": "DT_FINI"
+      },
+      {
+        "index": 3,
+        "kind": "fini_array",
+        "slot_va": "0x3de0",
+        "slot_file_offset": 11744,
+        "slot_bytes": 8,
+        "value_va": "0x1460",
+        "value_file_offset": 5216,
+        "slot_section": {
+          "name": ".fini_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "relative_addend",
+        "detail": "DT_FINI_ARRAY"
+      }
+    ],
+    "limitations": [
+      "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+      "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+      "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+      "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+      ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+      "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+      "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+    "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+    "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+    "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+    ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+    "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+    "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 11792,
+      "end": 11800
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 11736,
+      "end": 11744
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 11808,
+      "end": 11816
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 11744,
+      "end": 11752
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress"
+}

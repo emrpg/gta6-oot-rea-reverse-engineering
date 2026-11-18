@@ -1,0 +1,135 @@
+{
+  "evidence_id": "ev_2f75237a96198562cabefea7570d1f9d4c77fb40136b95a8aecaf09a6b23b71a",
+  "subject": {
+    "name": "gzinject",
+    "digest": {
+      "sha256": "e9a1df9b5fd966728e608b39b3acbdc27a9a0cbda99b58667d472baea3522e71"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+    "format": "elf",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+      "sha256": "e9a1df9b5fd966728e608b39b3acbdc27a9a0cbda99b58667d472baea3522e71",
+      "bytes": 79968
+    },
+    "format": "elf",
+    "architecture": "amd64",
+    "bits": 64,
+    "byte_order": "little",
+    "exports": [
+      {
+        "name": "stdout",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x213040",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 3,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      },
+      {
+        "name": "stdin",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x213050",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 3,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      },
+      {
+        "name": "stderr",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x213060",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 3,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      },
+      {
+        "name": "optarg",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x213058",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 3,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      }
+    ],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 54,
+      "exports": 4
+    },
+    "issues": [],
+    "limitations": [
+      "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+      "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+      "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+    "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+    "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject"
+}

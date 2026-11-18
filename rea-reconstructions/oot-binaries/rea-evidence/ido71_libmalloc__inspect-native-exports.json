@@ -1,0 +1,375 @@
+{
+  "evidence_id": "ev_da7efd55dcb945ef9e7d4347eb992a6a4d158d44f47702a2d0d2e92c798c8f84",
+  "subject": {
+    "name": "libmalloc.so",
+    "digest": {
+      "sha256": "cd6cce9583a682301ca7366edec1483db2457092b8218944e8ca84877605e4be"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libmalloc.so",
+    "format": "elf",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libmalloc.so",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libmalloc.so",
+      "sha256": "cd6cce9583a682301ca7366edec1483db2457092b8218944e8ca84877605e4be",
+      "bytes": 28216
+    },
+    "format": "elf",
+    "architecture": "mips",
+    "bits": 32,
+    "byte_order": "big",
+    "exports": [
+      {
+        "name": "_procedure_string_table",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x0",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "_procedure_table",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x0",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "__dso_displacement",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x0",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "_procedure_table_size",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x15",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "__elf_header",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf960000",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "__program_header_table",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf960034",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "malloc",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf960a90",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "free",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf960b78",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_recalloc",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf960c24",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "recalloc",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf960c24",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "realloc",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf9619a8",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "calloc",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf961df4",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_calloc",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf961df4",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "mallopt",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf961e88",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_mallopt",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf961e88",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_mallinfo",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf9620c0",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "mallinfo",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf9620c0",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "cfree",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf962474",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_cfree",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf962474",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_mallocblksize",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf96261c",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "memalign",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf9627a0",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_memalign",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf9627a0",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_malloc",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf960a90",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_free",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf960b78",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_realloc",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf9619a8",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__checkq",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf9624ac",
+        "size": "0",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "mallocblksize",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf96261c",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_gp_disp",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xf978020",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      }
+    ],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 44,
+      "exports": 28
+    },
+    "issues": [],
+    "limitations": [
+      "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+      "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+      "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+    "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+    "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libmalloc.so"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/lib/libmalloc.so"
+}

@@ -1,0 +1,66 @@
+{
+  "evidence_id": "ev_f4656d82f7a4e8fe35174249ef20a5df30f03d800d35984c2d635f35a53d0461",
+  "subject": {
+    "name": "seq64_console.exe",
+    "digest": {
+      "sha256": "7b5f10c23652358f79430b1dd02697c94aa2734b01d24b6fc22d177359983600"
+    },
+    "local_path": "/root/wsl-demo/oot-ports-repos/z64rom/project/tools/seq64_console.exe",
+    "format": "pe",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-ports-repos/z64rom/project/tools/seq64_console.exe",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-ports-repos/z64rom/project/tools/seq64_console.exe",
+      "sha256": "7b5f10c23652358f79430b1dd02697c94aa2734b01d24b6fc22d177359983600",
+      "bytes": 1684480
+    },
+    "format": "pe",
+    "architecture": "amd64",
+    "bits": 64,
+    "export_directory": null,
+    "exports": [],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 0,
+      "exports": 0
+    },
+    "issues": [],
+    "limitations": [
+      "The image declares no export directory, so it exports nothing by name or ordinal.",
+      "Rows reproduce the PE export directory; they do not establish that an export is reachable, safe to call or loaded at runtime.",
+      "Forwarded exports resolve in another DLL, which is not opened; ordinal-only exports have no name in this image."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "The image declares no export directory, so it exports nothing by name or ordinal.",
+    "Rows reproduce the PE export directory; they do not establish that an export is reachable, safe to call or loaded at runtime.",
+    "Forwarded exports resolve in another DLL, which is not opened; ordinal-only exports have no name in this image."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-ports-repos/z64rom/project/tools/seq64_console.exe"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-ports-repos/z64rom/project/tools/seq64_console.exe"
+}

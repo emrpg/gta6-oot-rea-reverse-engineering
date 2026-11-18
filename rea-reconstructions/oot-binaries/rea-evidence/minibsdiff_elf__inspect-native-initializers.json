@@ -1,0 +1,135 @@
+{
+  "evidence_id": "ev_6122787503c803da5976dd325fb3d8d5968be60b62a098f7b02da2d1539356c9",
+  "subject": {
+    "name": "minibsdiff",
+    "digest": {
+      "sha256": "1c8baf4263919f3d36b39b1320f7c1a8a3b634ed0784df160abcbad217fa6901"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-native-initializers",
+    "name": "REA ELF and Mach-O initializer parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_initializers",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+    "max_file_bytes": 67108864,
+    "offset": 0,
+    "limit": 64
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+      "sha256": "1c8baf4263919f3d36b39b1320f7c1a8a3b634ed0784df160abcbad217fa6901",
+      "bytes": 22768
+    },
+    "format": "elf",
+    "status": "parsed",
+    "applicability": "applicable",
+    "architecture": "x86_64",
+    "bits": 64,
+    "byte_order": "little",
+    "machine": 62,
+    "elf_type": 3,
+    "slice": null,
+    "coverage": {
+      "status": "complete",
+      "examined_entries": 6,
+      "total_entries": 2,
+      "returned_entries": 2,
+      "offset": 0,
+      "limit": 64
+    },
+    "entries": [
+      {
+        "index": 0,
+        "kind": "init",
+        "slot_va": "0x5e50",
+        "slot_file_offset": 20048,
+        "slot_bytes": 8,
+        "value_va": "0x1000",
+        "value_file_offset": 4096,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".init",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "raw",
+        "detail": "DT_INIT"
+      },
+      {
+        "index": 1,
+        "kind": "fini",
+        "slot_va": "0x5e60",
+        "slot_file_offset": 20064,
+        "slot_bytes": 8,
+        "value_va": "0x3774",
+        "value_file_offset": 14196,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".fini",
+          "trust": "observed-untrusted"
+        },
+        "symbol": null,
+        "resolution": "raw",
+        "detail": "DT_FINI"
+      }
+    ],
+    "limitations": [
+      "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+      "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+      "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+      "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+      ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+      "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+      "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports.",
+      "Omitted 4 .ctors or .dtors sentinel values (0 or -1)."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+    "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+    "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+    "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+    ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+    "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+    "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports.",
+    "Omitted 4 .ctors or .dtors sentinel values (0 or -1)."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 20048,
+      "end": 20056
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 20064,
+      "end": 20072
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff"
+}

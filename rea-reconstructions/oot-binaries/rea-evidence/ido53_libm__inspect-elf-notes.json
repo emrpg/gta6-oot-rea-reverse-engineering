@@ -1,0 +1,65 @@
+{
+  "evidence_id": "ev_e08d6cf8f0c4768cce27c7f21d0c9aeffd50d242a944b3d096cef6bcc0eedb7e",
+  "subject": {
+    "name": "libm.so",
+    "digest": {
+      "sha256": "8acc66c2d1315b90f38a280fe04a26d0e61b5ca377976ed5d7f88bb064bd2e35"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libm.so",
+    "format": "elf",
+    "architecture": "mips"
+  },
+  "provider": {
+    "id": "rea-elf-notes",
+    "name": "REA ELF note parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_notes",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libm.so",
+    "max_file_bytes": 67108864,
+    "max_entries": 32
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libm.so",
+      "sha256": "8acc66c2d1315b90f38a280fe04a26d0e61b5ca377976ed5d7f88bb064bd2e35",
+      "bytes": 111272
+    },
+    "format": "elf32",
+    "byte_order": "big",
+    "machine": 8,
+    "type": 3,
+    "type_name": "shared",
+    "tables": [],
+    "entries": [],
+    "coverage": {
+      "status": "complete",
+      "examined_tables": 0,
+      "examined_entries": 0
+    },
+    "limitations": [
+      "No PT_NOTE program header or SHT_NOTE section was declared. That is not proof the image never carried notes in another container or overlay.",
+      "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "No PT_NOTE program header or SHT_NOTE section was declared. That is not proof the image never carried notes in another container or overlay.",
+    "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libm.so"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libm.so"
+}

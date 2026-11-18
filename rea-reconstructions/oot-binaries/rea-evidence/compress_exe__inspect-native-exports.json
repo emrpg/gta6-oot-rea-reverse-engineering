@@ -1,0 +1,66 @@
+{
+  "evidence_id": "ev_c60f0293a3240207d1a2ef40aab5ccc6315e5e5f41714638513826f01e7eadc3",
+  "subject": {
+    "name": "Compress.exe",
+    "digest": {
+      "sha256": "f6ad34f6cd6bfd01c397bb135eb3fef2ce8d80c60f45a957a25a0dcae5399d35"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+    "format": "pe",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+      "sha256": "f6ad34f6cd6bfd01c397bb135eb3fef2ce8d80c60f45a957a25a0dcae5399d35",
+      "bytes": 517842
+    },
+    "format": "pe",
+    "architecture": "amd64",
+    "bits": 64,
+    "export_directory": null,
+    "exports": [],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 0,
+      "exports": 0
+    },
+    "issues": [],
+    "limitations": [
+      "The image declares no export directory, so it exports nothing by name or ordinal.",
+      "Rows reproduce the PE export directory; they do not establish that an export is reachable, safe to call or loaded at runtime.",
+      "Forwarded exports resolve in another DLL, which is not opened; ordinal-only exports have no name in this image."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "The image declares no export directory, so it exports nothing by name or ordinal.",
+    "Rows reproduce the PE export directory; they do not establish that an export is reachable, safe to call or loaded at runtime.",
+    "Forwarded exports resolve in another DLL, which is not opened; ordinal-only exports have no name in this image."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe"
+}

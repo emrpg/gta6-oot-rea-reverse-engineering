@@ -1,0 +1,84 @@
+{
+  "evidence_id": "ev_00263d529f97e84a1ba7150aa933bab8389e165f953675879710b70bfc90d4e8",
+  "subject": {
+    "name": "Decompress",
+    "digest": {
+      "sha256": "a28c212a86bd9daff0ca73e2fd700a3e7885fbff6ef69eb4efb0fd0174b93801"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+    "format": "elf",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+      "sha256": "a28c212a86bd9daff0ca73e2fd700a3e7885fbff6ef69eb4efb0fd0174b93801",
+      "bytes": 14520
+    },
+    "format": "elf",
+    "architecture": "amd64",
+    "bits": 64,
+    "byte_order": "little",
+    "exports": [
+      {
+        "name": "stderr",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x40a0",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 2,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      }
+    ],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 21,
+      "exports": 1
+    },
+    "issues": [],
+    "limitations": [
+      "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+      "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+      "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+    "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+    "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress"
+}

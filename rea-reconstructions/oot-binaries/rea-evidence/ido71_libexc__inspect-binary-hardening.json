@@ -1,0 +1,31 @@
+{
+  "code": "invalid_request",
+  "category": "invalid_input",
+  "message": "Analysis input is invalid. Check the arguments and try again.",
+  "retryable": false,
+  "remediation": {
+    "action": "Read the declared input schema or CLI usage for inspect_binary_hardening; if using MCP and the catalog may be stale, call tools/list. Correct the listed fields, then retry. Do not repeat the unchanged call."
+  },
+  "recovery": {
+    "kind": "inspect_input_contract",
+    "operation": "inspect_binary_hardening"
+  },
+  "details": {
+    "operation": "inspect_binary_hardening",
+    "issues": [
+      {
+        "path": [
+          "path"
+        ],
+        "reason": "invalid_format",
+        "message": "Selected artifact /root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so: ELF PT_DYNAMIC size is not a whole number of entries"
+      }
+    ],
+    "partial_observation": {
+      "kind": "file-snapshot-hash",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+      "sha256": "dc55c860347d58595cb98e5773824ecf7a346d77cf16d8b83f0cabfbaa86b638",
+      "bytes": 31596
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "evidence_id": "ev_045eb23fcd323ffcc309a9b564e398c65a60cbf5b59b38732865911345d29942",
+  "subject": {
+    "name": "n3dsdisasm",
+    "digest": {
+      "sha256": "131fd076eb2ff6c2c1f311b30754bfc3b0adc4b134486207d179c2126a73d037"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm",
+    "format": "elf",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm",
+      "sha256": "131fd076eb2ff6c2c1f311b30754bfc3b0adc4b134486207d179c2126a73d037",
+      "bytes": 10203928
+    },
+    "format": "elf",
+    "architecture": "amd64",
+    "bits": 64,
+    "byte_order": "little",
+    "exports": [
+      {
+        "name": "stdout",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xb8da60",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 2,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      },
+      {
+        "name": "stderr",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xb8da80",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 2,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      }
+    ],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 45,
+      "exports": 2
+    },
+    "issues": [],
+    "limitations": [
+      "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+      "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+      "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+    "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+    "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/n3dsdisasm"
+}

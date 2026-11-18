@@ -1,0 +1,191 @@
+{
+  "evidence_id": "ev_1512a84f84810091fbac5c1c061213eac2a6d29512a48aa9259d5f99c9aaa025",
+  "subject": {
+    "name": "ctrtool.exe",
+    "digest": {
+      "sha256": "921ab18aa2e0ca4ed1e7537f7dc1803a6eaae7c7251a678d6704111c7cb912e5"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-pe-resources",
+    "name": "REA PE resource parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_pe_resources",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool.exe",
+    "max_file_bytes": 67108864,
+    "max_entries": 16384
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool.exe",
+      "sha256": "921ab18aa2e0ca4ed1e7537f7dc1803a6eaae7c7251a678d6704111c7cb912e5",
+      "bytes": 938496
+    },
+    "format": "pe32-plus",
+    "machine": 34404,
+    "directory": {
+      "rva": 966656,
+      "location": {
+        "offset": 932864,
+        "bytes": 480
+      },
+      "data_directory_location": {
+        "offset": 424,
+        "bytes": 8
+      }
+    },
+    "directories": [
+      {
+        "path": [],
+        "entry_locations": [],
+        "location": {
+          "offset": 932864,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      },
+      {
+        "path": [
+          {
+            "kind": "id",
+            "id": 24
+          }
+        ],
+        "entry_locations": [
+          {
+            "offset": 932880,
+            "bytes": 8
+          }
+        ],
+        "location": {
+          "offset": 932888,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      },
+      {
+        "path": [
+          {
+            "kind": "id",
+            "id": 24
+          },
+          {
+            "kind": "id",
+            "id": 1
+          }
+        ],
+        "entry_locations": [
+          {
+            "offset": 932880,
+            "bytes": 8
+          },
+          {
+            "offset": 932904,
+            "bytes": 8
+          }
+        ],
+        "location": {
+          "offset": 932912,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      }
+    ],
+    "resources": [
+      {
+        "index": 0,
+        "type": {
+          "kind": "id",
+          "id": 24
+        },
+        "name": {
+          "kind": "id",
+          "id": 1
+        },
+        "language": {
+          "kind": "id",
+          "id": 1033
+        },
+        "entry_locations": [
+          {
+            "offset": 932880,
+            "bytes": 8
+          },
+          {
+            "offset": 932904,
+            "bytes": 8
+          },
+          {
+            "offset": 932928,
+            "bytes": 8
+          }
+        ],
+        "data_entry_location": {
+          "offset": 932936,
+          "bytes": 16
+        },
+        "code_page": 0,
+        "reserved": 0,
+        "payload": {
+          "rva": 966752,
+          "location": {
+            "offset": 932960,
+            "bytes": 381
+          },
+          "sha256": "4bb79dcea0a901f7d9eac5aa05728ae92acb42e0cb22e5dd14134f4421a3d8df"
+        }
+      }
+    ],
+    "icon_groups": [],
+    "coverage": {
+      "status": "complete",
+      "examined_entries": 3,
+      "resources": 1
+    },
+    "limitations": [
+      "Static PE32/PE32+ type/name/language resource inventory; payloads other than RT_GROUP_ICON remain opaque.",
+      "Icon candidates are resource-table relationships. Language fallback, image decoding and actual shell/window loading are not observed.",
+      "Exact shared byte ranges are retained; non-identical overlapping resource structures or payloads are rejected."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static PE32/PE32+ type/name/language resource inventory; payloads other than RT_GROUP_ICON remain opaque.",
+    "Icon candidates are resource-table relationships. Language fallback, image decoding and actual shell/window loading are not observed.",
+    "Exact shared byte ranges are retained; non-identical overlapping resource structures or payloads are rejected."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool.exe"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool.exe"
+}

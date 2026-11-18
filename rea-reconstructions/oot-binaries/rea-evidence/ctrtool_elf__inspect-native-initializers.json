@@ -1,0 +1,559 @@
+{
+  "evidence_id": "ev_b0896abc8fceb06d520e89fc0e26d7a234d0cf3f4f2c342bceb725638de01106",
+  "subject": {
+    "name": "ctrtool",
+    "digest": {
+      "sha256": "c7ede225144853d847f8a61b2b9278a17d15ede2fe5091a7f892661bec38d64a"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-native-initializers",
+    "name": "REA ELF and Mach-O initializer parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_initializers",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool",
+    "max_file_bytes": 67108864,
+    "offset": 0,
+    "limit": 64
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool",
+      "sha256": "c7ede225144853d847f8a61b2b9278a17d15ede2fe5091a7f892661bec38d64a",
+      "bytes": 2946576
+    },
+    "format": "elf",
+    "status": "parsed",
+    "applicability": "applicable",
+    "architecture": "x86_64",
+    "bits": 64,
+    "byte_order": "little",
+    "machine": 62,
+    "elf_type": 3,
+    "slice": null,
+    "coverage": {
+      "status": "complete",
+      "examined_entries": 17,
+      "total_entries": 17,
+      "returned_entries": 17,
+      "offset": 0,
+      "limit": 64
+    },
+    "entries": [
+      {
+        "index": 0,
+        "kind": "init",
+        "slot_va": "0x1bf818",
+        "slot_file_offset": 1828888,
+        "slot_bytes": 8,
+        "value_va": "0xf000",
+        "value_file_offset": 61440,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".init",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_init",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "raw",
+        "detail": "DT_INIT"
+      },
+      {
+        "index": 1,
+        "kind": "init_array",
+        "slot_va": "0x1bafe8",
+        "slot_file_offset": 1810408,
+        "slot_bytes": 8,
+        "value_va": "0x10630",
+        "value_file_offset": 67120,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "frame_dummy",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 2,
+        "kind": "init_array",
+        "slot_va": "0x1baff0",
+        "slot_file_offset": 1810416,
+        "slot_bytes": 8,
+        "value_va": "0x9af51",
+        "value_file_offset": 634705,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_ByteData.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 3,
+        "kind": "init_array",
+        "slot_va": "0x1baff8",
+        "slot_file_offset": 1810424,
+        "slot_bytes": 8,
+        "value_va": "0x9e7ba",
+        "value_file_offset": 649146,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_ConcatenatedStream.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 4,
+        "kind": "init_array",
+        "slot_va": "0x1bb000",
+        "slot_file_offset": 1810432,
+        "slot_bytes": 8,
+        "value_va": "0xa5617",
+        "value_file_offset": 677399,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_FileStream.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 5,
+        "kind": "init_array",
+        "slot_va": "0x1bb008",
+        "slot_file_offset": 1810440,
+        "slot_bytes": 8,
+        "value_va": "0xa85c3",
+        "value_file_offset": 689603,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_LocalFileSystem.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 6,
+        "kind": "init_array",
+        "slot_va": "0x1bb010",
+        "slot_file_offset": 1810448,
+        "slot_bytes": 8,
+        "value_va": "0xaa54e",
+        "value_file_offset": 697678,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_MemoryStream.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 7,
+        "kind": "init_array",
+        "slot_va": "0x1bb018",
+        "slot_file_offset": 1810456,
+        "slot_bytes": 8,
+        "value_va": "0xabc98",
+        "value_file_offset": 703640,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_Path.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 8,
+        "kind": "init_array",
+        "slot_va": "0x1bb020",
+        "slot_file_offset": 1810464,
+        "slot_bytes": 8,
+        "value_va": "0xd8640",
+        "value_file_offset": 886336,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_StreamSource.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 9,
+        "kind": "init_array",
+        "slot_va": "0x1bb028",
+        "slot_file_offset": 1810472,
+        "slot_bytes": 8,
+        "value_va": "0xd9c94",
+        "value_file_offset": 892052,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_SubStream.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 10,
+        "kind": "init_array",
+        "slot_va": "0x1bb030",
+        "slot_file_offset": 1810480,
+        "slot_bytes": 8,
+        "value_va": "0xdc037",
+        "value_file_offset": 901175,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_VirtualFileSystem.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 11,
+        "kind": "init_array",
+        "slot_va": "0x1bb038",
+        "slot_file_offset": 1810488,
+        "slot_bytes": 8,
+        "value_va": "0xe328e",
+        "value_file_offset": 930446,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_OptionParser.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 12,
+        "kind": "init_array",
+        "slot_va": "0x1bb040",
+        "slot_file_offset": 1810496,
+        "slot_bytes": 8,
+        "value_va": "0xe6d82",
+        "value_file_offset": 945538,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_Aes128CbcEncryptedStream.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 13,
+        "kind": "init_array",
+        "slot_va": "0x1bb048",
+        "slot_file_offset": 1810504,
+        "slot_bytes": 8,
+        "value_va": "0xea78a",
+        "value_file_offset": 960394,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_Aes128CtrEncryptedStream.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 14,
+        "kind": "init_array",
+        "slot_va": "0x1bb050",
+        "slot_file_offset": 1810512,
+        "slot_bytes": 8,
+        "value_va": "0xf5aa1",
+        "value_file_offset": 1006241,
+        "slot_section": {
+          "name": ".init_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_GLOBAL__sub_I_BasicPathResolver.cpp",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_INIT_ARRAY"
+      },
+      {
+        "index": 15,
+        "kind": "fini",
+        "slot_va": "0x1bf828",
+        "slot_file_offset": 1828904,
+        "slot_bytes": 8,
+        "value_va": "0x148444",
+        "value_file_offset": 1344580,
+        "slot_section": {
+          "name": ".dynamic",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".fini",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "_fini",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "raw",
+        "detail": "DT_FINI"
+      },
+      {
+        "index": 16,
+        "kind": "fini_array",
+        "slot_va": "0x1bb058",
+        "slot_file_offset": 1810520,
+        "slot_bytes": 8,
+        "value_va": "0x105f0",
+        "value_file_offset": 67056,
+        "slot_section": {
+          "name": ".fini_array",
+          "trust": "observed-untrusted"
+        },
+        "section": {
+          "name": ".text",
+          "trust": "observed-untrusted"
+        },
+        "symbol": {
+          "name": "__do_global_dtors_aux",
+          "trust": "observed-untrusted"
+        },
+        "resolution": "relative_addend",
+        "detail": "DT_FINI_ARRAY"
+      }
+    ],
+    "limitations": [
+      "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+      "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+      "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+      "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+      ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+      "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+      "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This inspection does not execute the image and does not prove that a listed address runs before main or at exit.",
+    "A missing dynamic tag or section is observed absence of that declaration, not proof that no constructor exists in code.",
+    "Symbol and section names are exact file text and are untrusted. A resolved address is named only when a defined symbol value equals that address. An unresolved import keeps the relocation symbol name.",
+    "PIE and shared-object slots are resolved through RELATIVE and RELR dynamic relocations, and through section REL or RELA records when no dynamic relocation covers the slot. Other relocation kinds stay unresolved.",
+    ".ctors and .dtors values 0 and -1 are sentinels and are omitted. Those sections are listed in file order, not reverse runtime order.",
+    "DT_FINI is listed before fini_array. The dynamic linker runs fini_array first at exit.",
+    "Mach-O __init_offsets entries are 32-bit offsets from the image base, not pointers. Chained binds are unresolved imports."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1828888,
+      "end": 1828896
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810408,
+      "end": 1810416
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810416,
+      "end": 1810424
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810424,
+      "end": 1810432
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810432,
+      "end": 1810440
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810440,
+      "end": 1810448
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810448,
+      "end": 1810456
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810456,
+      "end": 1810464
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810464,
+      "end": 1810472
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810472,
+      "end": 1810480
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810480,
+      "end": 1810488
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810488,
+      "end": 1810496
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810496,
+      "end": 1810504
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810504,
+      "end": 1810512
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810512,
+      "end": 1810520
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1828904,
+      "end": 1828912
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 1810520,
+      "end": 1810528
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool"
+}

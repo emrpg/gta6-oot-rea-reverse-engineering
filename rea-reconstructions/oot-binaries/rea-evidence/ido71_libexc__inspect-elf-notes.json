@@ -1,0 +1,65 @@
+{
+  "evidence_id": "ev_28df298b5ee2c1c9e2b3c6af6258fcc2c54ad1a83cfd023513e25237baba3a0e",
+  "subject": {
+    "name": "libexc.so",
+    "digest": {
+      "sha256": "dc55c860347d58595cb98e5773824ecf7a346d77cf16d8b83f0cabfbaa86b638"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+    "format": "elf",
+    "architecture": "mips"
+  },
+  "provider": {
+    "id": "rea-elf-notes",
+    "name": "REA ELF note parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_notes",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+    "max_file_bytes": 67108864,
+    "max_entries": 32
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+      "sha256": "dc55c860347d58595cb98e5773824ecf7a346d77cf16d8b83f0cabfbaa86b638",
+      "bytes": 31596
+    },
+    "format": "elf32",
+    "byte_order": "big",
+    "machine": 8,
+    "type": 3,
+    "type_name": "shared",
+    "tables": [],
+    "entries": [],
+    "coverage": {
+      "status": "complete",
+      "examined_tables": 0,
+      "examined_entries": 0
+    },
+    "limitations": [
+      "No PT_NOTE program header or SHT_NOTE section was declared. That is not proof the image never carried notes in another container or overlay.",
+      "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "No PT_NOTE program header or SHT_NOTE section was declared. That is not proof the image never carried notes in another container or overlay.",
+    "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so"
+}

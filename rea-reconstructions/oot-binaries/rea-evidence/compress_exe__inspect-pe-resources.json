@@ -1,0 +1,191 @@
+{
+  "evidence_id": "ev_ef9ba8cfd1e7473dfe6f08ee54f2b091200256fd461bc007144a9f6e3882ba9a",
+  "subject": {
+    "name": "Compress.exe",
+    "digest": {
+      "sha256": "f6ad34f6cd6bfd01c397bb135eb3fef2ce8d80c60f45a957a25a0dcae5399d35"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-pe-resources",
+    "name": "REA PE resource parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_pe_resources",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+    "max_file_bytes": 67108864,
+    "max_entries": 16384
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe",
+      "sha256": "f6ad34f6cd6bfd01c397bb135eb3fef2ce8d80c60f45a957a25a0dcae5399d35",
+      "bytes": 517842
+    },
+    "format": "pe32-plus",
+    "machine": 34404,
+    "directory": {
+      "rva": 147456,
+      "location": {
+        "offset": 122368,
+        "bytes": 1256
+      },
+      "data_directory_location": {
+        "offset": 280,
+        "bytes": 8
+      }
+    },
+    "directories": [
+      {
+        "path": [],
+        "entry_locations": [],
+        "location": {
+          "offset": 122368,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      },
+      {
+        "path": [
+          {
+            "kind": "id",
+            "id": 24
+          }
+        ],
+        "entry_locations": [
+          {
+            "offset": 122384,
+            "bytes": 8
+          }
+        ],
+        "location": {
+          "offset": 122392,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      },
+      {
+        "path": [
+          {
+            "kind": "id",
+            "id": 24
+          },
+          {
+            "kind": "id",
+            "id": 1
+          }
+        ],
+        "entry_locations": [
+          {
+            "offset": 122384,
+            "bytes": 8
+          },
+          {
+            "offset": 122408,
+            "bytes": 8
+          }
+        ],
+        "location": {
+          "offset": 122416,
+          "bytes": 24
+        },
+        "characteristics": 0,
+        "timestamp": 0,
+        "major_version": 0,
+        "minor_version": 0,
+        "named_entries": 0,
+        "id_entries": 1
+      }
+    ],
+    "resources": [
+      {
+        "index": 0,
+        "type": {
+          "kind": "id",
+          "id": 24
+        },
+        "name": {
+          "kind": "id",
+          "id": 1
+        },
+        "language": {
+          "kind": "id",
+          "id": 0
+        },
+        "entry_locations": [
+          {
+            "offset": 122384,
+            "bytes": 8
+          },
+          {
+            "offset": 122408,
+            "bytes": 8
+          },
+          {
+            "offset": 122432,
+            "bytes": 8
+          }
+        ],
+        "data_entry_location": {
+          "offset": 122440,
+          "bytes": 16
+        },
+        "code_page": 0,
+        "reserved": 0,
+        "payload": {
+          "rva": 147544,
+          "location": {
+            "offset": 122456,
+            "bytes": 1167
+          },
+          "sha256": "a73f26a8d504043f785d7360e8febf2eeb8522ec873a0d4dd5d1d4bfd1e67d3d"
+        }
+      }
+    ],
+    "icon_groups": [],
+    "coverage": {
+      "status": "complete",
+      "examined_entries": 3,
+      "resources": 1
+    },
+    "limitations": [
+      "Static PE32/PE32+ type/name/language resource inventory; payloads other than RT_GROUP_ICON remain opaque.",
+      "Icon candidates are resource-table relationships. Language fallback, image decoding and actual shell/window loading are not observed.",
+      "Exact shared byte ranges are retained; non-identical overlapping resource structures or payloads are rejected."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static PE32/PE32+ type/name/language resource inventory; payloads other than RT_GROUP_ICON remain opaque.",
+    "Icon candidates are resource-table relationships. Language fallback, image decoding and actual shell/window loading are not observed.",
+    "Exact shared byte ranges are retained; non-identical overlapping resource structures or payloads are rejected."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress.exe"
+}

@@ -1,0 +1,248 @@
+{
+  "evidence_id": "ev_db325683fed40d6889b4e4c609f74f90d382bd1c9f08b5e910dee6e47f5cacc9",
+  "subject": {
+    "name": "gzinject",
+    "digest": {
+      "sha256": "e9a1df9b5fd966728e608b39b3acbdc27a9a0cbda99b58667d472baea3522e71"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-elf-notes",
+    "name": "REA ELF note parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_notes",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+    "max_file_bytes": 67108864,
+    "max_entries": 32
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+      "sha256": "e9a1df9b5fd966728e608b39b3acbdc27a9a0cbda99b58667d472baea3522e71",
+      "bytes": 79968
+    },
+    "format": "elf64",
+    "byte_order": "little",
+    "machine": 62,
+    "type": 3,
+    "type_name": "shared",
+    "tables": [
+      {
+        "kind": "program",
+        "index": 5,
+        "name": null,
+        "location": {
+          "offset": 596,
+          "bytes": 68
+        },
+        "alignment": 4
+      },
+      {
+        "kind": "section",
+        "index": 2,
+        "name": ".note.ABI-tag",
+        "location": {
+          "offset": 596,
+          "bytes": 32
+        },
+        "alignment": 4
+      },
+      {
+        "kind": "section",
+        "index": 3,
+        "name": ".note.gnu.build-id",
+        "location": {
+          "offset": 628,
+          "bytes": 36
+        },
+        "alignment": 4
+      }
+    ],
+    "entries": [
+      {
+        "index": 0,
+        "table_kind": "program",
+        "table_index": 5,
+        "location": {
+          "offset": 596,
+          "bytes": 32
+        },
+        "namesz": 4,
+        "descsz": 16,
+        "type": 1,
+        "type_name": "gnu_abi_tag",
+        "owner": "GNU",
+        "owner_bytes_hex": "474e5500",
+        "descriptor": {
+          "location": {
+            "offset": 612,
+            "bytes": 16
+          },
+          "bytes": 16,
+          "sha256": "67fc579de7e859031f4bdebbaf20e4266f2981bb1b8239ff78c685c4e66f91b3",
+          "hex": "00000000030000000200000000000000"
+        },
+        "gnu": {
+          "build_id_hex": null,
+          "abi_tag": {
+            "os": 0,
+            "os_name": "linux",
+            "major": 3,
+            "minor": 2,
+            "subminor": 0
+          },
+          "gold_version": null
+        },
+        "core": null,
+        "android": null
+      },
+      {
+        "index": 1,
+        "table_kind": "program",
+        "table_index": 5,
+        "location": {
+          "offset": 628,
+          "bytes": 36
+        },
+        "namesz": 4,
+        "descsz": 20,
+        "type": 3,
+        "type_name": "gnu_build_id",
+        "owner": "GNU",
+        "owner_bytes_hex": "474e5500",
+        "descriptor": {
+          "location": {
+            "offset": 644,
+            "bytes": 20
+          },
+          "bytes": 20,
+          "sha256": "9c06022dd456bb359750bfbf9e61e77bec5a4245bebd1753ff95d6c5c5cb966b",
+          "hex": "e027bc0e055d9f1526e500a82a75a6d5bbace387"
+        },
+        "gnu": {
+          "build_id_hex": "e027bc0e055d9f1526e500a82a75a6d5bbace387",
+          "abi_tag": null,
+          "gold_version": null
+        },
+        "core": null,
+        "android": null
+      },
+      {
+        "index": 2,
+        "table_kind": "section",
+        "table_index": 2,
+        "location": {
+          "offset": 596,
+          "bytes": 32
+        },
+        "namesz": 4,
+        "descsz": 16,
+        "type": 1,
+        "type_name": "gnu_abi_tag",
+        "owner": "GNU",
+        "owner_bytes_hex": "474e5500",
+        "descriptor": {
+          "location": {
+            "offset": 612,
+            "bytes": 16
+          },
+          "bytes": 16,
+          "sha256": "67fc579de7e859031f4bdebbaf20e4266f2981bb1b8239ff78c685c4e66f91b3",
+          "hex": "00000000030000000200000000000000"
+        },
+        "gnu": {
+          "build_id_hex": null,
+          "abi_tag": {
+            "os": 0,
+            "os_name": "linux",
+            "major": 3,
+            "minor": 2,
+            "subminor": 0
+          },
+          "gold_version": null
+        },
+        "core": null,
+        "android": null
+      },
+      {
+        "index": 3,
+        "table_kind": "section",
+        "table_index": 3,
+        "location": {
+          "offset": 628,
+          "bytes": 36
+        },
+        "namesz": 4,
+        "descsz": 20,
+        "type": 3,
+        "type_name": "gnu_build_id",
+        "owner": "GNU",
+        "owner_bytes_hex": "474e5500",
+        "descriptor": {
+          "location": {
+            "offset": 644,
+            "bytes": 20
+          },
+          "bytes": 20,
+          "sha256": "9c06022dd456bb359750bfbf9e61e77bec5a4245bebd1753ff95d6c5c5cb966b",
+          "hex": "e027bc0e055d9f1526e500a82a75a6d5bbace387"
+        },
+        "gnu": {
+          "build_id_hex": "e027bc0e055d9f1526e500a82a75a6d5bbace387",
+          "abi_tag": null,
+          "gold_version": null
+        },
+        "core": null,
+        "android": null
+      }
+    ],
+    "coverage": {
+      "status": "complete",
+      "examined_tables": 3,
+      "examined_entries": 4
+    },
+    "limitations": [
+      "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs.",
+      "PT_NOTE and SHT_NOTE are examined independently; the same file range may appear twice when both tables declare it."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs.",
+    "PT_NOTE and SHT_NOTE are examined independently; the same file range may appear twice when both tables declare it."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 596,
+      "end": 664
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 596,
+      "end": 628
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 628,
+      "end": 664
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject"
+}

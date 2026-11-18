@@ -1,0 +1,375 @@
+{
+  "evidence_id": "ev_e14e42e1b7f22f2b39112deaa8b7a8dd543fdb0f5c8b6a8212622e74adaa0949",
+  "subject": {
+    "name": "libexc.so",
+    "digest": {
+      "sha256": "dc55c860347d58595cb98e5773824ecf7a346d77cf16d8b83f0cabfbaa86b638"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+    "format": "elf",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so",
+      "sha256": "dc55c860347d58595cb98e5773824ecf7a346d77cf16d8b83f0cabfbaa86b638",
+      "bytes": 31596
+    },
+    "format": "elf",
+    "architecture": "mips",
+    "bits": 32,
+    "byte_order": "big",
+    "exports": [
+      {
+        "name": "__dso_displacement",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x0",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "__elf_header",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe0000",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "__program_header_table",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe0034",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "exc_setjmp",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe0ce0",
+        "size": "92",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "exc_resume",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe0d3c",
+        "size": "132",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__exc_set_gp_and_resume",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe0dc0",
+        "size": "136",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "exception_dispatcher",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe0efc",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__exception_dispatcher",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe0efc",
+        "size": "556",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "set_unhandled_exception",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe1128",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__set_unhandled_exception",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe1128",
+        "size": "24",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__exc_setjmp",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe1140",
+        "size": "52",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__exc_resume",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe1174",
+        "size": "52",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "fixup_rpt",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe11e8",
+        "size": "368",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "findinit",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe1358",
+        "size": "220",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__find_rpd",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe164c",
+        "size": "60",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "unwind_name",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe2690",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__unwind",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe298c",
+        "size": "56",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_gp_disp",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xaffb1f0",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_procedure_table",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x0",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "_procedure_table_size",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x30",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "_procedure_string_table",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x780",
+        "size": "0",
+        "type": "other",
+        "binding": "global",
+        "visibility": "protected",
+        "version": null
+      },
+      {
+        "name": "compare_rpdrs",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe11b0",
+        "size": "56",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "find_rpd_name",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe143c",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__find_rpd_name",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe143c",
+        "size": "528",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "find_rpd",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe164c",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "__unwind_name",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe2690",
+        "size": "764",
+        "type": "function",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "unwind",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xafe298c",
+        "size": "0",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "null_string",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xaff31f4",
+        "size": "4",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": null
+      }
+    ],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 49,
+      "exports": 28
+    },
+    "issues": [],
+    "limitations": [
+      "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+      "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+      "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+    "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+    "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido7.1_compiler/usr/lib/libexc.so"
+}

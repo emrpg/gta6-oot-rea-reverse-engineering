@@ -1,0 +1,155 @@
+{
+  "evidence_id": "ev_9053c2bdd81e83e5cae01f12bf9342c59887579688adf80b89c6e73d06a67260",
+  "subject": {
+    "name": "ctrtool",
+    "digest": {
+      "sha256": "c7ede225144853d847f8a61b2b9278a17d15ede2fe5091a7f892661bec38d64a"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool",
+    "format": "elf",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool",
+      "sha256": "c7ede225144853d847f8a61b2b9278a17d15ede2fe5091a7f892661bec38d64a",
+      "bytes": 2946576
+    },
+    "format": "elf",
+    "architecture": "amd64",
+    "bits": 64,
+    "byte_order": "little",
+    "exports": [
+      {
+        "name": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IPcvEET_S7_RKS3_",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xacf06",
+        "size": "195",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xad6a2",
+        "size": "281",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IN9__gnu_cxx17__normal_iteratorIPcS4_EEvEET_SA_RKS3_",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xd2f2c",
+        "size": "195",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x6f9d3",
+        "size": "235",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIN9__gnu_cxx17__normal_iteratorIPcS4_EEEEvT_SA_St20forward_iterator_tag",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xd4a3a",
+        "size": "293",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IPcvEET_S7_RKS3_",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xacf06",
+        "size": "195",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IN9__gnu_cxx17__normal_iteratorIPcS4_EEvEET_SA_RKS3_",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0xd2f2c",
+        "size": "195",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      },
+      {
+        "name": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_SA_",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x2e4aa",
+        "size": "253",
+        "type": "function",
+        "binding": "weak",
+        "visibility": "default",
+        "version": null
+      }
+    ],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 204,
+      "exports": 8
+    },
+    "issues": [],
+    "limitations": [
+      "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+      "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+      "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+    "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+    "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot3d/disassembly/tools/ctrtool"
+}

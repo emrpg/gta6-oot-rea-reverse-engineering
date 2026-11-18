@@ -1,0 +1,832 @@
+{
+  "evidence_id": "ev_98720ca80fc56a69e964d4aacc36b82f4ac6eb20e8d92aa6c59738b2eba575d9",
+  "subject": {
+    "name": "gzinject.exe",
+    "digest": {
+      "sha256": "78f09b27770261df2079ac8fa81fba9a7997b6d322c61c85e6444bef4e764993"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-pe-imports",
+    "name": "REA PE import parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_pe_imports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject.exe",
+    "max_file_bytes": 67108864,
+    "max_dlls": 256,
+    "max_functions": 8192
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject.exe",
+      "sha256": "78f09b27770261df2079ac8fa81fba9a7997b6d322c61c85e6444bef4e764993",
+      "bytes": 78848
+    },
+    "format": "pe32-plus",
+    "machine": 34404,
+    "bits": 64,
+    "architecture": "amd64",
+    "import_directory": {
+      "rva": 90112,
+      "size": 3116,
+      "locations": [
+        {
+          "offset": 72704,
+          "bytes": 60
+        }
+      ]
+    },
+    "delay_import_directory": null,
+    "imports": [
+      {
+        "index": 0,
+        "name": "KERNEL32.dll",
+        "name_rva": 92940,
+        "original_first_thunk_rva": 90172,
+        "first_thunk_rva": 90900,
+        "time_date_stamp": 0,
+        "forwarder_chain": 0,
+        "location": {
+          "offset": 72704,
+          "bytes": 20
+        },
+        "functions": [
+          {
+            "hint": 269,
+            "name": "DeleteCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 90172,
+            "iat_rva": 90900,
+            "thunk_hex": "165ec"
+          },
+          {
+            "hint": 305,
+            "name": "EnterCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 90180,
+            "iat_rva": 90908,
+            "thunk_hex": "16604"
+          },
+          {
+            "hint": 536,
+            "name": "GetCurrentProcess",
+            "ordinal": null,
+            "ilt_rva": 90188,
+            "iat_rva": 90916,
+            "thunk_hex": "1661c"
+          },
+          {
+            "hint": 537,
+            "name": "GetCurrentProcessId",
+            "ordinal": null,
+            "ilt_rva": 90196,
+            "iat_rva": 90924,
+            "thunk_hex": "16630"
+          },
+          {
+            "hint": 541,
+            "name": "GetCurrentThreadId",
+            "ordinal": null,
+            "ilt_rva": 90204,
+            "iat_rva": 90932,
+            "thunk_hex": "16646"
+          },
+          {
+            "hint": 579,
+            "name": "GetFileAttributesA",
+            "ordinal": null,
+            "ilt_rva": 90212,
+            "iat_rva": 90940,
+            "thunk_hex": "1665c"
+          },
+          {
+            "hint": 610,
+            "name": "GetLastError",
+            "ordinal": null,
+            "ilt_rva": 90220,
+            "iat_rva": 90948,
+            "thunk_hex": "16672"
+          },
+          {
+            "hint": 722,
+            "name": "GetStartupInfoA",
+            "ordinal": null,
+            "ilt_rva": 90228,
+            "iat_rva": 90956,
+            "thunk_hex": "16682"
+          },
+          {
+            "hint": 747,
+            "name": "GetSystemTimeAsFileTime",
+            "ordinal": null,
+            "ilt_rva": 90236,
+            "iat_rva": 90964,
+            "thunk_hex": "16694"
+          },
+          {
+            "hint": 775,
+            "name": "GetTickCount",
+            "ordinal": null,
+            "ilt_rva": 90244,
+            "iat_rva": 90972,
+            "thunk_hex": "166ae"
+          },
+          {
+            "hint": 864,
+            "name": "InitializeCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 90252,
+            "iat_rva": 90980,
+            "thunk_hex": "166be"
+          },
+          {
+            "hint": 952,
+            "name": "LeaveCriticalSection",
+            "ordinal": null,
+            "ilt_rva": 90260,
+            "iat_rva": 90988,
+            "thunk_hex": "166da"
+          },
+          {
+            "hint": 1094,
+            "name": "QueryPerformanceCounter",
+            "ordinal": null,
+            "ilt_rva": 90268,
+            "iat_rva": 90996,
+            "thunk_hex": "166f2"
+          },
+          {
+            "hint": 1180,
+            "name": "RtlAddFunctionTable",
+            "ordinal": null,
+            "ilt_rva": 90276,
+            "iat_rva": 91004,
+            "thunk_hex": "1670c"
+          },
+          {
+            "hint": 1181,
+            "name": "RtlCaptureContext",
+            "ordinal": null,
+            "ilt_rva": 90284,
+            "iat_rva": 91012,
+            "thunk_hex": "16722"
+          },
+          {
+            "hint": 1188,
+            "name": "RtlLookupFunctionEntry",
+            "ordinal": null,
+            "ilt_rva": 90292,
+            "iat_rva": 91020,
+            "thunk_hex": "16736"
+          },
+          {
+            "hint": 1195,
+            "name": "RtlVirtualUnwind",
+            "ordinal": null,
+            "ilt_rva": 90300,
+            "iat_rva": 91028,
+            "thunk_hex": "16750"
+          },
+          {
+            "hint": 1347,
+            "name": "SetUnhandledExceptionFilter",
+            "ordinal": null,
+            "ilt_rva": 90308,
+            "iat_rva": 91036,
+            "thunk_hex": "16764"
+          },
+          {
+            "hint": 1361,
+            "name": "Sleep",
+            "ordinal": null,
+            "ilt_rva": 90316,
+            "iat_rva": 91044,
+            "thunk_hex": "16782"
+          },
+          {
+            "hint": 1376,
+            "name": "TerminateProcess",
+            "ordinal": null,
+            "ilt_rva": 90324,
+            "iat_rva": 91052,
+            "thunk_hex": "1678a"
+          },
+          {
+            "hint": 1396,
+            "name": "TlsGetValue",
+            "ordinal": null,
+            "ilt_rva": 90332,
+            "iat_rva": 91060,
+            "thunk_hex": "1679e"
+          },
+          {
+            "hint": 1410,
+            "name": "UnhandledExceptionFilter",
+            "ordinal": null,
+            "ilt_rva": 90340,
+            "iat_rva": 91068,
+            "thunk_hex": "167ac"
+          },
+          {
+            "hint": 1444,
+            "name": "VirtualProtect",
+            "ordinal": null,
+            "ilt_rva": 90348,
+            "iat_rva": 91076,
+            "thunk_hex": "167c8"
+          },
+          {
+            "hint": 1446,
+            "name": "VirtualQuery",
+            "ordinal": null,
+            "ilt_rva": 90356,
+            "iat_rva": 91084,
+            "thunk_hex": "167da"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "name": "msvcrt.dll",
+        "name_rva": 93216,
+        "original_first_thunk_rva": 90372,
+        "first_thunk_rva": 91100,
+        "time_date_stamp": 0,
+        "forwarder_chain": 0,
+        "location": {
+          "offset": 72724,
+          "bytes": 20
+        },
+        "functions": [
+          {
+            "hint": 56,
+            "name": "__C_specific_handler",
+            "ordinal": null,
+            "ilt_rva": 90372,
+            "iat_rva": 91100,
+            "thunk_hex": "167ea"
+          },
+          {
+            "hint": 71,
+            "name": "__argv",
+            "ordinal": null,
+            "ilt_rva": 90380,
+            "iat_rva": 91108,
+            "thunk_hex": "16802"
+          },
+          {
+            "hint": 82,
+            "name": "__getmainargs",
+            "ordinal": null,
+            "ilt_rva": 90388,
+            "iat_rva": 91116,
+            "thunk_hex": "1680c"
+          },
+          {
+            "hint": 83,
+            "name": "__initenv",
+            "ordinal": null,
+            "ilt_rva": 90396,
+            "iat_rva": 91124,
+            "thunk_hex": "1681c"
+          },
+          {
+            "hint": 84,
+            "name": "__iob_func",
+            "ordinal": null,
+            "ilt_rva": 90404,
+            "iat_rva": 91132,
+            "thunk_hex": "16828"
+          },
+          {
+            "hint": 91,
+            "name": "__lconv_init",
+            "ordinal": null,
+            "ilt_rva": 90412,
+            "iat_rva": 91140,
+            "thunk_hex": "16836"
+          },
+          {
+            "hint": 97,
+            "name": "__set_app_type",
+            "ordinal": null,
+            "ilt_rva": 90420,
+            "iat_rva": 91148,
+            "thunk_hex": "16846"
+          },
+          {
+            "hint": 99,
+            "name": "__setusermatherr",
+            "ordinal": null,
+            "ilt_rva": 90428,
+            "iat_rva": 91156,
+            "thunk_hex": "16858"
+          },
+          {
+            "hint": 115,
+            "name": "_acmdln",
+            "ordinal": null,
+            "ilt_rva": 90436,
+            "iat_rva": 91164,
+            "thunk_hex": "1686c"
+          },
+          {
+            "hint": 123,
+            "name": "_amsg_exit",
+            "ordinal": null,
+            "ilt_rva": 90444,
+            "iat_rva": 91172,
+            "thunk_hex": "16876"
+          },
+          {
+            "hint": 141,
+            "name": "_cexit",
+            "ordinal": null,
+            "ilt_rva": 90452,
+            "iat_rva": 91180,
+            "thunk_hex": "16884"
+          },
+          {
+            "hint": 144,
+            "name": "_chdir",
+            "ordinal": null,
+            "ilt_rva": 90460,
+            "iat_rva": 91188,
+            "thunk_hex": "1688e"
+          },
+          {
+            "hint": 201,
+            "name": "_errno",
+            "ordinal": null,
+            "ilt_rva": 90468,
+            "iat_rva": 91196,
+            "thunk_hex": "16898"
+          },
+          {
+            "hint": 234,
+            "name": "_findclose",
+            "ordinal": null,
+            "ilt_rva": 90476,
+            "iat_rva": 91204,
+            "thunk_hex": "168a2"
+          },
+          {
+            "hint": 236,
+            "name": "_findfirst64",
+            "ordinal": null,
+            "ilt_rva": 90484,
+            "iat_rva": 91212,
+            "thunk_hex": "168b0"
+          },
+          {
+            "hint": 241,
+            "name": "_findnext64",
+            "ordinal": null,
+            "ilt_rva": 90492,
+            "iat_rva": 91220,
+            "thunk_hex": "168c0"
+          },
+          {
+            "hint": 253,
+            "name": "_fmode",
+            "ordinal": null,
+            "ilt_rva": 90500,
+            "iat_rva": 91228,
+            "thunk_hex": "168ce"
+          },
+          {
+            "hint": 279,
+            "name": "_fullpath",
+            "ordinal": null,
+            "ilt_rva": 90508,
+            "iat_rva": 91236,
+            "thunk_hex": "168d8"
+          },
+          {
+            "hint": 299,
+            "name": "_getcwd",
+            "ordinal": null,
+            "ilt_rva": 90516,
+            "iat_rva": 91244,
+            "thunk_hex": "168e4"
+          },
+          {
+            "hint": 331,
+            "name": "_initterm",
+            "ordinal": null,
+            "ilt_rva": 90524,
+            "iat_rva": 91252,
+            "thunk_hex": "168ee"
+          },
+          {
+            "hint": 601,
+            "name": "_mkdir",
+            "ordinal": null,
+            "ilt_rva": 90532,
+            "iat_rva": 91260,
+            "thunk_hex": "168fa"
+          },
+          {
+            "hint": 611,
+            "name": "_onexit",
+            "ordinal": null,
+            "ilt_rva": 90540,
+            "iat_rva": 91268,
+            "thunk_hex": "16904"
+          },
+          {
+            "hint": 643,
+            "name": "_rmdir",
+            "ordinal": null,
+            "ilt_rva": 90548,
+            "iat_rva": 91276,
+            "thunk_hex": "1690e"
+          },
+          {
+            "hint": 720,
+            "name": "_stat64",
+            "ordinal": null,
+            "ilt_rva": 90556,
+            "iat_rva": 91284,
+            "thunk_hex": "16918"
+          },
+          {
+            "hint": 850,
+            "name": "_vsnprintf",
+            "ordinal": null,
+            "ilt_rva": 90564,
+            "iat_rva": 91292,
+            "thunk_hex": "16922"
+          },
+          {
+            "hint": 1031,
+            "name": "abort",
+            "ordinal": null,
+            "ilt_rva": 90572,
+            "iat_rva": 91300,
+            "thunk_hex": "16930"
+          },
+          {
+            "hint": 1050,
+            "name": "calloc",
+            "ordinal": null,
+            "ilt_rva": 90580,
+            "iat_rva": 91308,
+            "thunk_hex": "16938"
+          },
+          {
+            "hint": 1063,
+            "name": "exit",
+            "ordinal": null,
+            "ilt_rva": 90588,
+            "iat_rva": 91316,
+            "thunk_hex": "16942"
+          },
+          {
+            "hint": 1067,
+            "name": "fclose",
+            "ordinal": null,
+            "ilt_rva": 90596,
+            "iat_rva": 91324,
+            "thunk_hex": "1694a"
+          },
+          {
+            "hint": 1068,
+            "name": "feof",
+            "ordinal": null,
+            "ilt_rva": 90604,
+            "iat_rva": 91332,
+            "thunk_hex": "16954"
+          },
+          {
+            "hint": 1069,
+            "name": "ferror",
+            "ordinal": null,
+            "ilt_rva": 90612,
+            "iat_rva": 91340,
+            "thunk_hex": "1695c"
+          },
+          {
+            "hint": 1071,
+            "name": "fgetc",
+            "ordinal": null,
+            "ilt_rva": 90620,
+            "iat_rva": 91348,
+            "thunk_hex": "16966"
+          },
+          {
+            "hint": 1073,
+            "name": "fgets",
+            "ordinal": null,
+            "ilt_rva": 90628,
+            "iat_rva": 91356,
+            "thunk_hex": "1696e"
+          },
+          {
+            "hint": 1080,
+            "name": "fopen",
+            "ordinal": null,
+            "ilt_rva": 90636,
+            "iat_rva": 91364,
+            "thunk_hex": "16976"
+          },
+          {
+            "hint": 1082,
+            "name": "fprintf",
+            "ordinal": null,
+            "ilt_rva": 90644,
+            "iat_rva": 91372,
+            "thunk_hex": "1697e"
+          },
+          {
+            "hint": 1084,
+            "name": "fputc",
+            "ordinal": null,
+            "ilt_rva": 90652,
+            "iat_rva": 91380,
+            "thunk_hex": "16988"
+          },
+          {
+            "hint": 1088,
+            "name": "fread",
+            "ordinal": null,
+            "ilt_rva": 90660,
+            "iat_rva": 91388,
+            "thunk_hex": "16990"
+          },
+          {
+            "hint": 1089,
+            "name": "free",
+            "ordinal": null,
+            "ilt_rva": 90668,
+            "iat_rva": 91396,
+            "thunk_hex": "16998"
+          },
+          {
+            "hint": 1095,
+            "name": "fseek",
+            "ordinal": null,
+            "ilt_rva": 90676,
+            "iat_rva": 91404,
+            "thunk_hex": "169a0"
+          },
+          {
+            "hint": 1097,
+            "name": "ftell",
+            "ordinal": null,
+            "ilt_rva": 90684,
+            "iat_rva": 91412,
+            "thunk_hex": "169a8"
+          },
+          {
+            "hint": 1101,
+            "name": "fwrite",
+            "ordinal": null,
+            "ilt_rva": 90692,
+            "iat_rva": 91420,
+            "thunk_hex": "169b0"
+          },
+          {
+            "hint": 1106,
+            "name": "getenv",
+            "ordinal": null,
+            "ilt_rva": 90700,
+            "iat_rva": 91428,
+            "thunk_hex": "169ba"
+          },
+          {
+            "hint": 1137,
+            "name": "isxdigit",
+            "ordinal": null,
+            "ilt_rva": 90708,
+            "iat_rva": 91436,
+            "thunk_hex": "169c4"
+          },
+          {
+            "hint": 1148,
+            "name": "malloc",
+            "ordinal": null,
+            "ilt_rva": 90716,
+            "iat_rva": 91444,
+            "thunk_hex": "169d0"
+          },
+          {
+            "hint": 1156,
+            "name": "memcpy",
+            "ordinal": null,
+            "ilt_rva": 90724,
+            "iat_rva": 91452,
+            "thunk_hex": "169da"
+          },
+          {
+            "hint": 1157,
+            "name": "memmove",
+            "ordinal": null,
+            "ilt_rva": 90732,
+            "iat_rva": 91460,
+            "thunk_hex": "169e4"
+          },
+          {
+            "hint": 1158,
+            "name": "memset",
+            "ordinal": null,
+            "ilt_rva": 90740,
+            "iat_rva": 91468,
+            "thunk_hex": "169ee"
+          },
+          {
+            "hint": 1162,
+            "name": "perror",
+            "ordinal": null,
+            "ilt_rva": 90748,
+            "iat_rva": 91476,
+            "thunk_hex": "169f8"
+          },
+          {
+            "hint": 1165,
+            "name": "printf",
+            "ordinal": null,
+            "ilt_rva": 90756,
+            "iat_rva": 91484,
+            "thunk_hex": "16a02"
+          },
+          {
+            "hint": 1168,
+            "name": "putchar",
+            "ordinal": null,
+            "ilt_rva": 90764,
+            "iat_rva": 91492,
+            "thunk_hex": "16a0c"
+          },
+          {
+            "hint": 1169,
+            "name": "puts",
+            "ordinal": null,
+            "ilt_rva": 90772,
+            "iat_rva": 91500,
+            "thunk_hex": "16a16"
+          },
+          {
+            "hint": 1176,
+            "name": "realloc",
+            "ordinal": null,
+            "ilt_rva": 90780,
+            "iat_rva": 91508,
+            "thunk_hex": "16a1e"
+          },
+          {
+            "hint": 1177,
+            "name": "remove",
+            "ordinal": null,
+            "ilt_rva": 90788,
+            "iat_rva": 91516,
+            "thunk_hex": "16a28"
+          },
+          {
+            "hint": 1182,
+            "name": "setbuf",
+            "ordinal": null,
+            "ilt_rva": 90796,
+            "iat_rva": 91524,
+            "thunk_hex": "16a32"
+          },
+          {
+            "hint": 1186,
+            "name": "signal",
+            "ordinal": null,
+            "ilt_rva": 90804,
+            "iat_rva": 91532,
+            "thunk_hex": "16a3c"
+          },
+          {
+            "hint": 1191,
+            "name": "sprintf",
+            "ordinal": null,
+            "ilt_rva": 90812,
+            "iat_rva": 91540,
+            "thunk_hex": "16a46"
+          },
+          {
+            "hint": 1195,
+            "name": "sscanf",
+            "ordinal": null,
+            "ilt_rva": 90820,
+            "iat_rva": 91548,
+            "thunk_hex": "16a50"
+          },
+          {
+            "hint": 1199,
+            "name": "strchr",
+            "ordinal": null,
+            "ilt_rva": 90828,
+            "iat_rva": 91556,
+            "thunk_hex": "16a5a"
+          },
+          {
+            "hint": 1200,
+            "name": "strcmp",
+            "ordinal": null,
+            "ilt_rva": 90836,
+            "iat_rva": 91564,
+            "thunk_hex": "16a64"
+          },
+          {
+            "hint": 1202,
+            "name": "strcpy",
+            "ordinal": null,
+            "ilt_rva": 90844,
+            "iat_rva": 91572,
+            "thunk_hex": "16a6e"
+          },
+          {
+            "hint": 1207,
+            "name": "strlen",
+            "ordinal": null,
+            "ilt_rva": 90852,
+            "iat_rva": 91580,
+            "thunk_hex": "16a78"
+          },
+          {
+            "hint": 1210,
+            "name": "strncmp",
+            "ordinal": null,
+            "ilt_rva": 90860,
+            "iat_rva": 91588,
+            "thunk_hex": "16a82"
+          },
+          {
+            "hint": 1211,
+            "name": "strncpy",
+            "ordinal": null,
+            "ilt_rva": 90868,
+            "iat_rva": 91596,
+            "thunk_hex": "16a8c"
+          },
+          {
+            "hint": 1214,
+            "name": "strrchr",
+            "ordinal": null,
+            "ilt_rva": 90876,
+            "iat_rva": 91604,
+            "thunk_hex": "16a96"
+          },
+          {
+            "hint": 1242,
+            "name": "vfprintf",
+            "ordinal": null,
+            "ilt_rva": 90884,
+            "iat_rva": 91612,
+            "thunk_hex": "16aa0"
+          }
+        ]
+      }
+    ],
+    "delay_imports": [],
+    "imphash": {
+      "algorithm": "pefile",
+      "md5": "5a93e872ffb70267f6d1a45954c415fd",
+      "reason": null
+    },
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_dlls": 2,
+      "imports": 89,
+      "delay_imports": 0
+    },
+    "issues": [],
+    "limitations": [
+      "Rows reproduce the PE import and delay-load directories; they do not establish that an import is bound, forwarded or reachable at runtime.",
+      "Bound import snapshots, the import address table as loaded, and export-forward resolution in another DLL remain unobserved."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows reproduce the PE import and delay-load directories; they do not establish that an import is bound, forwarded or reachable at runtime.",
+    "Bound import snapshots, the import address table as loaded, and export-forward resolution in another DLL remain unobserved."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject.exe"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 72704,
+      "end": 72764
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject.exe"
+}

@@ -1,0 +1,65 @@
+{
+  "evidence_id": "ev_67a306425ef73ed17bd430a09e23f857759a56595f0f7e01d3b7b60a111b155c",
+  "subject": {
+    "name": "libmalloc_old.so",
+    "digest": {
+      "sha256": "5742b9c8844a8055d10228fc2c02c62080907635761887378aa90f25ccfe3f03"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so",
+    "format": "elf",
+    "architecture": "mips"
+  },
+  "provider": {
+    "id": "rea-elf-notes",
+    "name": "REA ELF note parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_notes",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so",
+    "max_file_bytes": 67108864,
+    "max_entries": 32
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so",
+      "sha256": "5742b9c8844a8055d10228fc2c02c62080907635761887378aa90f25ccfe3f03",
+      "bytes": 28216
+    },
+    "format": "elf32",
+    "byte_order": "big",
+    "machine": 8,
+    "type": 3,
+    "type_name": "shared",
+    "tables": [],
+    "entries": [],
+    "coverage": {
+      "status": "complete",
+      "examined_tables": 0,
+      "examined_entries": 0
+    },
+    "limitations": [
+      "No PT_NOTE program header or SHT_NOTE section was declared. That is not proof the image never carried notes in another container or overlay.",
+      "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "No PT_NOTE program header or SHT_NOTE section was declared. That is not proof the image never carried notes in another container or overlay.",
+    "This workflow does not execute the image, resolve runtime notes, or verify GNU build-id uniqueness against package catalogs."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/lib/libmalloc_old.so"
+}

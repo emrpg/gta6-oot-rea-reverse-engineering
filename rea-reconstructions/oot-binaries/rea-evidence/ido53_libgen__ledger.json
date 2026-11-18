@@ -1,0 +1,27 @@
+{
+  "error": "Application workflow failed",
+  "code": "invalid_request",
+  "category": "invalid_input",
+  "message": "JSON input is not valid UTF-8",
+  "retryable": false,
+  "remediation": {
+    "action": "Read the declared input schema or CLI usage for build-reconstruction-obligation-ledger; if using MCP and the catalog may be stale, call tools/list. Correct the listed fields, then retry. Do not repeat the unchanged call."
+  },
+  "recovery": {
+    "kind": "inspect_input_contract",
+    "operation": "build-reconstruction-obligation-ledger"
+  },
+  "details": {
+    "operation": "build-reconstruction-obligation-ledger",
+    "issues": [
+      {
+        "path": [],
+        "reason": "invalid_format",
+        "message": "JSON input is not valid UTF-8",
+        "expected": "JSON"
+      }
+    ]
+  },
+  "input_path": "/root/wsl-demo/oot-decomp-projects/oot/tools/ido5.3_compiler/usr/lib/libgen.so",
+  "input_reason": "invalid-json"
+}

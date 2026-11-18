@@ -1,0 +1,205 @@
+{
+  "evidence_id": "ev_b90f1776c1330fd9e21c55bea8bfa7cc45f7663ee5395b108219b1bd38519dd1",
+  "subject": {
+    "name": "gzinject",
+    "digest": {
+      "sha256": "e9a1df9b5fd966728e608b39b3acbdc27a9a0cbda99b58667d472baea3522e71"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-binary-hardening",
+    "name": "REA binary hardening parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_binary_hardening",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+    "max_file_bytes": 67108864
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject",
+      "sha256": "e9a1df9b5fd966728e608b39b3acbdc27a9a0cbda99b58667d472baea3522e71",
+      "bytes": 79968
+    },
+    "format": "elf",
+    "images": [
+      {
+        "format": "elf",
+        "status": "parsed",
+        "reason": null,
+        "architecture": "x86_64",
+        "bits": 64,
+        "byte_order": "little",
+        "machine": 62,
+        "slice": null,
+        "rows": [
+          {
+            "property": "pie",
+            "state": "enabled",
+            "confidence": "derived",
+            "basis": "e_type is ET_DYN and DF_1_PIE is set.",
+            "location": {
+              "offset": 77232,
+              "bytes": 16
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "nx",
+            "state": "enabled",
+            "confidence": "observed",
+            "basis": "PT_GNU_STACK p_flags does not include PF_X.",
+            "location": {
+              "offset": 460,
+              "bytes": 4
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "relro",
+            "state": "enabled",
+            "confidence": "derived",
+            "basis": "PT_GNU_RELRO is present and BIND_NOW is set.",
+            "location": {
+              "offset": 512,
+              "bytes": 56
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "stack_protector",
+            "state": "enabled",
+            "confidence": "observed",
+            "basis": "Undefined dynamic symbol __stack_chk_fail is present.",
+            "location": {
+              "offset": 2147,
+              "bytes": 16
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "fortify",
+            "state": "enabled",
+            "confidence": "observed",
+            "basis": "Undefined dynamic symbol __snprintf_chk is present.",
+            "location": {
+              "offset": 2350,
+              "bytes": 14
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "cet_ibt_shstk",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "CET IBT and SHSTK GNU property note is absent. These bits are opt-in.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "aarch64_bti_pac",
+            "state": "not_applicable",
+            "confidence": "observed",
+            "basis": "AArch64 BTI and PAC notes apply to a different architecture.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "rpath",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "DT_RPATH is absent.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "runpath",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "DT_RUNPATH is absent.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "stripped",
+            "state": "enabled",
+            "confidence": "observed",
+            "basis": "Section headers are present and none has type SHT_SYMTAB.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "This inspection reads headers, program tables, dynamic symbols, and imports. It does not execute the image or assess exploitability.",
+      "A missing stack-protector or fortify symbol does not establish that the protection is absent.",
+      "An undefined stack-protector or fortify symbol is a sign that some code uses the protection, not proof that all code does.",
+      "Authenticode and Mach-O code-signature rows report table or load-command presence, not signature validity.",
+      "PE control-flow guard state is the GuardFlags linker claim, not a check that CFG checks run.",
+      "Mach-O hardened runtime is not read here. inspect_signature owns CodeDirectory flags."
+    ]
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This inspection reads headers, program tables, dynamic symbols, and imports. It does not execute the image or assess exploitability.",
+    "A missing stack-protector or fortify symbol does not establish that the protection is absent.",
+    "An undefined stack-protector or fortify symbol is a sign that some code uses the protection, not proof that all code does.",
+    "Authenticode and Mach-O code-signature rows report table or load-command presence, not signature validity.",
+    "PE control-flow guard state is the GuardFlags linker claim, not a check that CFG checks run.",
+    "Mach-O hardened runtime is not read here. inspect_signature owns CodeDirectory flags."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 77232,
+      "end": 77248
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 460,
+      "end": 464
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 512,
+      "end": 568
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 2147,
+      "end": 2163
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 2350,
+      "end": 2364
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/gzinject/gzinject"
+}

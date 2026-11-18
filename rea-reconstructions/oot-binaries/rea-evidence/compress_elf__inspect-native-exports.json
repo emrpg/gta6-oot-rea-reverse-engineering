@@ -1,0 +1,101 @@
+{
+  "evidence_id": "ev_93f89a9f19efff00b028f9d280db0d7eaf65d526c9370830163b9725a38da260",
+  "subject": {
+    "name": "Compress",
+    "digest": {
+      "sha256": "19ad907a0286333273dced7d2a29661b9ac440e16539d5559dcb50de1bc7a5e2"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress",
+    "format": "elf",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-native-exports",
+    "name": "REA PE/ELF export table reader",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_native_exports",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress",
+    "max_file_bytes": 268435456
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress",
+      "sha256": "19ad907a0286333273dced7d2a29661b9ac440e16539d5559dcb50de1bc7a5e2",
+      "bytes": 26640
+    },
+    "format": "elf",
+    "architecture": "amd64",
+    "bits": 64,
+    "byte_order": "little",
+    "exports": [
+      {
+        "name": "stdout",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x6020",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 2,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      },
+      {
+        "name": "stderr",
+        "name_bytes_base64": null,
+        "name_utf8_decodable": true,
+        "value": "0x6040",
+        "size": "8",
+        "type": "object",
+        "binding": "global",
+        "visibility": "default",
+        "version": {
+          "index": 2,
+          "name": "GLIBC_2.2.5",
+          "name_bytes_base64": null,
+          "name_utf8_decodable": true,
+          "hidden": false
+        }
+      }
+    ],
+    "coverage": {
+      "status": "complete",
+      "reason": null,
+      "examined_entries": 37,
+      "exports": 2
+    },
+    "issues": [],
+    "limitations": [
+      "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+      "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+      "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+    "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+    "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress"
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Compress/Compress"
+}

@@ -1,0 +1,547 @@
+{
+  "evidence_id": "ev_e977e69482433693e6294b80ad20f4b61ce07e6c4d0f11a8412ad2653cc87fd5",
+  "subject": {
+    "name": "Decompress",
+    "digest": {
+      "sha256": "a28c212a86bd9daff0ca73e2fd700a3e7885fbff6ef69eb4efb0fd0174b93801"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-elf-unwind-ranges",
+    "name": "REA ELF unwind range parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_elf_unwind_ranges",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+    "max_file_bytes": 67108864,
+    "max_ranges": 8192,
+    "offset": 0,
+    "limit": 256
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress",
+      "sha256": "a28c212a86bd9daff0ca73e2fd700a3e7885fbff6ef69eb4efb0fd0174b93801",
+      "bytes": 14520
+    },
+    "format": "elf64",
+    "byte_order": "little",
+    "machine": 62,
+    "type": 3,
+    "type_name": "shared",
+    "eh_frame": {
+      "status": "present",
+      "source": "section",
+      "location": {
+        "offset": 8488,
+        "bytes": 680
+      }
+    },
+    "eh_frame_hdr": {
+      "status": "present",
+      "location": {
+        "offset": 8336,
+        "bytes": 148
+      },
+      "version": 1,
+      "eh_frame_pointer_encoding": {
+        "raw": 27,
+        "name": "pcrel|sdata4"
+      },
+      "fde_count_encoding": {
+        "raw": 3,
+        "name": "udata4"
+      },
+      "table_encoding": {
+        "raw": 59,
+        "name": "datarel|sdata4"
+      },
+      "eh_frame_pointer": "0x2128",
+      "fde_count": 17,
+      "table_entries": 17
+    },
+    "debug_frame": {
+      "status": "absent",
+      "location": null
+    },
+    "cies": [
+      {
+        "index": 0,
+        "version": 1,
+        "augmentation": {
+          "text": "zR",
+          "trust": "untrusted"
+        },
+        "code_alignment": 1,
+        "data_alignment": -8,
+        "return_address_register": 16,
+        "pointer_encoding": {
+          "raw": 27,
+          "name": "pcrel|sdata4"
+        },
+        "lsda_encoding": null,
+        "personality": null,
+        "signal_frame": false,
+        "b_key": false,
+        "instruction_bytes": 7,
+        "location": {
+          "offset": 8488,
+          "bytes": 24
+        }
+      }
+    ],
+    "ranges": [
+      {
+        "index": 0,
+        "start": "0x13c0",
+        "end": "0x13ef",
+        "size": "47",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8512,
+          "bytes": 24
+        }
+      },
+      {
+        "index": 1,
+        "start": "0x1020",
+        "end": "0x1120",
+        "size": "256",
+        "section": {
+          "text": ".plt",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8536,
+          "bytes": 40
+        }
+      },
+      {
+        "index": 2,
+        "start": "0x14c0",
+        "end": "0x163a",
+        "size": "378",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8576,
+          "bytes": 20
+        }
+      },
+      {
+        "index": 3,
+        "start": "0x1640",
+        "end": "0x167b",
+        "size": "59",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8596,
+          "bytes": 20
+        }
+      },
+      {
+        "index": 4,
+        "start": "0x1680",
+        "end": "0x1718",
+        "size": "152",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8616,
+          "bytes": 20
+        }
+      },
+      {
+        "index": 5,
+        "start": "0x1720",
+        "end": "0x1960",
+        "size": "576",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8636,
+          "bytes": 116
+        }
+      },
+      {
+        "index": 6,
+        "start": "0x1960",
+        "end": "0x1b41",
+        "size": "481",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8752,
+          "bytes": 36
+        }
+      },
+      {
+        "index": 7,
+        "start": "0x1b50",
+        "end": "0x1b55",
+        "size": "5",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8788,
+          "bytes": 20
+        }
+      },
+      {
+        "index": 8,
+        "start": "0x1b60",
+        "end": "0x1b67",
+        "size": "7",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8808,
+          "bytes": 20
+        }
+      },
+      {
+        "index": 9,
+        "start": "0x1b70",
+        "end": "0x1bcf",
+        "size": "95",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8828,
+          "bytes": 20
+        }
+      },
+      {
+        "index": 10,
+        "start": "0x1bd0",
+        "end": "0x1ca7",
+        "size": "215",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8848,
+          "bytes": 48
+        }
+      },
+      {
+        "index": 11,
+        "start": "0x1cb0",
+        "end": "0x1cf1",
+        "size": "65",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8896,
+          "bytes": 20
+        }
+      },
+      {
+        "index": 12,
+        "start": "0x1d00",
+        "end": "0x1d3f",
+        "size": "63",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8916,
+          "bytes": 20
+        }
+      },
+      {
+        "index": 13,
+        "start": "0x1d40",
+        "end": "0x1e26",
+        "size": "230",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8936,
+          "bytes": 60
+        }
+      },
+      {
+        "index": 14,
+        "start": "0x1120",
+        "end": "0x13b7",
+        "size": "663",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 8996,
+          "bytes": 76
+        }
+      },
+      {
+        "index": 15,
+        "start": "0x1e30",
+        "end": "0x1e95",
+        "size": "101",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 9072,
+          "bytes": 72
+        }
+      },
+      {
+        "index": 16,
+        "start": "0x1ea0",
+        "end": "0x1ea5",
+        "size": "5",
+        "section": {
+          "text": ".text",
+          "trust": "untrusted"
+        },
+        "symbol": null,
+        "cie_index": 0,
+        "lsda": null,
+        "personality": null,
+        "location": {
+          "offset": 9144,
+          "bytes": 20
+        }
+      }
+    ],
+    "page": {
+      "offset": 0,
+      "limit": 256,
+      "returned": 17,
+      "total": 17,
+      "next_offset": null
+    },
+    "coverage": {
+      "status": "complete",
+      "total_ranges": 17,
+      "total_cies": 1,
+      "ranges_with_symbols": 0,
+      "ranges_without_symbols": 17,
+      "eh_frame_hdr_agreement": "agree",
+      "examined_records": 18
+    },
+    "limitations": [
+      "CFA instructions are counted but not evaluated.",
+      ".debug_frame is absent; only .eh_frame was examined.",
+      "Symbol names, section names, and augmentation strings are target-derived and untrusted."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "CFA instructions are counted but not evaluated.",
+    ".debug_frame is absent; only .eh_frame was examined.",
+    "Symbol names, section names, and augmentation strings are target-derived and untrusted."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8488,
+      "end": 9168
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8336,
+      "end": 8484
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8488,
+      "end": 8512
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8512,
+      "end": 8536
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8536,
+      "end": 8576
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8576,
+      "end": 8596
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8596,
+      "end": 8616
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8616,
+      "end": 8636
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8636,
+      "end": 8752
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8752,
+      "end": 8788
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8788,
+      "end": 8808
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8808,
+      "end": 8828
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8828,
+      "end": 8848
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8848,
+      "end": 8896
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8896,
+      "end": 8916
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8916,
+      "end": 8936
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8936,
+      "end": 8996
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 8996,
+      "end": 9072
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 9072,
+      "end": 9144
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 9144,
+      "end": 9164
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/Decompress/Decompress"
+}

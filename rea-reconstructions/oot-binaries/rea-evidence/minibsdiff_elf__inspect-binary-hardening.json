@@ -1,0 +1,189 @@
+{
+  "evidence_id": "ev_c7ddc264b42a9d6abec1e648592974a13338f78a0dff6a14e2fca6d1df502897",
+  "subject": {
+    "name": "minibsdiff",
+    "digest": {
+      "sha256": "1c8baf4263919f3d36b39b1320f7c1a8a3b634ed0784df160abcbad217fa6901"
+    },
+    "local_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-binary-hardening",
+    "name": "REA binary hardening parser",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_binary_hardening",
+  "parameters": {
+    "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+    "max_file_bytes": 67108864
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff",
+      "sha256": "1c8baf4263919f3d36b39b1320f7c1a8a3b634ed0784df160abcbad217fa6901",
+      "bytes": 22768
+    },
+    "format": "elf",
+    "images": [
+      {
+        "format": "elf",
+        "status": "parsed",
+        "reason": null,
+        "architecture": "x86_64",
+        "bits": 64,
+        "byte_order": "little",
+        "machine": 62,
+        "slice": null,
+        "rows": [
+          {
+            "property": "pie",
+            "state": "enabled",
+            "confidence": "derived",
+            "basis": "e_type is ET_DYN and DF_1_PIE is set.",
+            "location": {
+              "offset": 20280,
+              "bytes": 16
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "nx",
+            "state": "enabled",
+            "confidence": "observed",
+            "basis": "PT_GNU_STACK p_flags does not include PF_X.",
+            "location": {
+              "offset": 684,
+              "bytes": 4
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "relro",
+            "state": "partial",
+            "confidence": "derived",
+            "basis": "PT_GNU_RELRO is present and BIND_NOW is not set.",
+            "location": {
+              "offset": 736,
+              "bytes": 56
+            },
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "stack_protector",
+            "state": "unknown",
+            "confidence": "observed",
+            "basis": "No __stack_chk_fail symbol was found in the dynamic symbol table. A static or stripped image can omit that import while still using a stack protector.",
+            "location": null,
+            "note": "No __stack_chk_fail symbol was found in the dynamic symbol table. A static or stripped image can omit that import while still using a stack protector.",
+            "next_probe": null
+          },
+          {
+            "property": "fortify",
+            "state": "unknown",
+            "confidence": "observed",
+            "basis": "No fortify symbol was found in the dynamic symbol table. A static or stripped image can omit those imports while still using FORTIFY.",
+            "location": null,
+            "note": "No fortify symbol was found in the dynamic symbol table. A static or stripped image can omit those imports while still using FORTIFY.",
+            "next_probe": null
+          },
+          {
+            "property": "cet_ibt_shstk",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "CET IBT and SHSTK GNU property note is absent. These bits are opt-in.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "aarch64_bti_pac",
+            "state": "not_applicable",
+            "confidence": "observed",
+            "basis": "AArch64 BTI and PAC notes apply to a different architecture.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "rpath",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "DT_RPATH is absent.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "runpath",
+            "state": "disabled",
+            "confidence": "observed",
+            "basis": "DT_RUNPATH is absent.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          },
+          {
+            "property": "stripped",
+            "state": "enabled",
+            "confidence": "observed",
+            "basis": "Section headers are present and none has type SHT_SYMTAB.",
+            "location": null,
+            "note": null,
+            "next_probe": null
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "This inspection reads headers, program tables, dynamic symbols, and imports. It does not execute the image or assess exploitability.",
+      "A missing stack-protector or fortify symbol does not establish that the protection is absent.",
+      "An undefined stack-protector or fortify symbol is a sign that some code uses the protection, not proof that all code does.",
+      "Authenticode and Mach-O code-signature rows report table or load-command presence, not signature validity.",
+      "PE control-flow guard state is the GuardFlags linker claim, not a check that CFG checks run.",
+      "Mach-O hardened runtime is not read here. inspect_signature owns CodeDirectory flags."
+    ]
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "This inspection reads headers, program tables, dynamic symbols, and imports. It does not execute the image or assess exploitability.",
+    "A missing stack-protector or fortify symbol does not establish that the protection is absent.",
+    "An undefined stack-protector or fortify symbol is a sign that some code uses the protection, not proof that all code does.",
+    "Authenticode and Mach-O code-signature rows report table or load-command presence, not signature validity.",
+    "PE control-flow guard state is the GuardFlags linker claim, not a check that CFG checks run.",
+    "Mach-O hardened runtime is not read here. inspect_signature owns CodeDirectory flags."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff"
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 20280,
+      "end": 20296
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 684,
+      "end": 688
+    },
+    {
+      "kind": "file-offset-range",
+      "start": 736,
+      "end": 792
+    }
+  ],
+  "evidence_links": [],
+  "caller_input_path": "/root/wsl-demo/oot-decomp-projects/OoT-Randomizer/bin/minibsdiff/minibsdiff"
+}
