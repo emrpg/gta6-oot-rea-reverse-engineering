@@ -27,3 +27,12 @@ rea-reconstructions/**/evidence/*.yaml
 rea-reconstructions/**/notes/profiles/
 rea-reconstructions/**/notes/*.log
 rea-reconstructions/**/notes/leonida_source_graph.json
+
+# Round 2: never commit multi-hundred-MB REA bundles or collected release archives
+*.bundle.json
+rea-reconstructions/**/*.json
+rea-reconstructions/release-binaries/**
+!rea-reconstructions/notes/
+oot-peripherals/round2-audio-save-modtools/**/*.zip
+oot-peripherals/round2-audio-save-modtools/**/*.7z
+rea-reconstructions/**/*__app.json
