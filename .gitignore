@@ -12,3 +12,18 @@ oot-peripherals/
 oot-port-projects/
 oot-ports-repos/
 rea-artifacts/
+
+# Large binary archives and raw multi-MB REA evidence dumps
+rea-reconstructions/release-binaries/**/*.zip
+rea-reconstructions/release-binaries/**/*.tar.xz
+rea-reconstructions/release-binaries/ex/
+rea-reconstructions/**/evidence/*.json
+rea-reconstructions/**/rea-evidence/*.json
+
+# web-and-js REA working artifacts (multi-MB, reproducible from Appendix A commands)
+rea-reconstructions/**/bundles/
+rea-reconstructions/**/recovered/
+rea-reconstructions/**/evidence/*.yaml
+rea-reconstructions/**/notes/profiles/
+rea-reconstructions/**/notes/*.log
+rea-reconstructions/**/notes/leonida_source_graph.json

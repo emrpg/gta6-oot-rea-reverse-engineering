@@ -1,0 +1,153 @@
+{
+ "method": "REA endpoint-node literal sets from the obfuscated and the Wakaru-recovered graphs; paired by byte identity, then by a documented canonicalisation (bracket->dot member access, template literal -> string concatenation, quote/+/whitespace removal).",
+ "raw_evidence_id": "ev_f59510342eac7a56c022fbb22364cc6018b5868300b5d83c11f68329fdc7bd61",
+ "recovered_evidence_id": "ev_5a75e5257d5160f6127c0ed26a761525a648bd068c8009a1555729a9c94364ed",
+ "raw_literal_count": 125,
+ "recovered_literal_count": 125,
+ "byte_identical": 97,
+ "same_semantics_form_only_pairs": 28,
+ "raw_literals_without_match": 0,
+ "unmatched_raw_literals": [],
+ "form_only_pairs": [
+  {
+   "obfuscated": "'auth/api.php?action=admin_db_integrity&id='+encodeURIComponent(_0x1839cf)",
+   "recovered": "`auth/api.php?action=admin_db_integrity&id=${encodeURIComponent(_0x1839cf)}`",
+   "canonical": "auth/api.php?action=admin_db_integrity&id=encodeURIComponent(_0x1839cf)"
+  },
+  {
+   "obfuscated": "'auth/api.php?action=admin_user_details&id='+encodeURIComponent(_0x2bf704)",
+   "recovered": "`auth/api.php?action=admin_user_details&id=${encodeURIComponent(_0x2bf704)}`",
+   "canonical": "auth/api.php?action=admin_user_details&id=encodeURIComponent(_0x2bf704)"
+  },
+  {
+   "obfuscated": "'auth/api.php?action=admin_users&'+_0x1f4e74",
+   "recovered": "`auth/api.php?action=admin_users&${_0x1f4e74}`",
+   "canonical": "auth/api.php?action=admin_users&_0x1f4e74"
+  },
+  {
+   "obfuscated": "'auth/api.php?action=leaderboard&game=screenshot_challenge&limit='+limit",
+   "recovered": "`auth/api.php?action=leaderboard&game=screenshot_challenge&limit=${limit}`",
+   "canonical": "auth/api.php?action=leaderboard&game=screenshot_challenge&limit=limit"
+  },
+  {
+   "obfuscated": "'auth/api.php?action=marker_list&type='+this['_state']['type']",
+   "recovered": "`auth/api.php?action=marker_list&type=${this._state.type}`",
+   "canonical": "auth/api.php?action=marker_list&type=this._state.type"
+  },
+  {
+   "obfuscated": "'auth/api.php?action=marker_list&type='+type",
+   "recovered": "`auth/api.php?action=marker_list&type=${type}`",
+   "canonical": "auth/api.php?action=marker_list&type=type"
+  },
+  {
+   "obfuscated": "'data/'+_0x4400a3",
+   "recovered": "`data/${_0x4400a3}`",
+   "canonical": "data/_0x4400a3"
+  },
+  {
+   "obfuscated": "'data/logs_'+_0x3ed687['toLowerCase']()+'.json?v='+timestamp",
+   "recovered": "`data/logs_${_0x3ed687.toLowerCase()}.json?v=${timestamp}`",
+   "canonical": "data/logs__0x3ed687.toLowerCase().json?v=timestamp"
+  },
+  {
+   "obfuscated": "'data/maps/'+_0x1877ef+'.json'",
+   "recovered": "`data/maps/${_0x1877ef}.json`",
+   "canonical": "data/maps/_0x1877ef.json"
+  },
+  {
+   "obfuscated": "'data/wiki-cache.json?t='+Date['now']()",
+   "recovered": "`data/wiki-cache.json?t=${Date.now()}`",
+   "canonical": "data/wiki-cache.json?t=Date.now()"
+  },
+  {
+   "obfuscated": "'get-media-files.php?type='+encodeURIComponent(tab['id'])",
+   "recovered": "`get-media-files.php?type=${encodeURIComponent(tab.id)}`",
+   "canonical": "get-media-files.php?type=encodeURIComponent(tab.id)"
+  },
+  {
+   "obfuscated": "'get-media-files.php?type='+encodeURIComponent(type)",
+   "recovered": "`get-media-files.php?type=${encodeURIComponent(type)}`",
+   "canonical": "get-media-files.php?type=encodeURIComponent(type)"
+  },
+  {
+   "obfuscated": "'get-media-files.php?type='+type",
+   "recovered": "`get-media-files.php?type=${type}`",
+   "canonical": "get-media-files.php?type=type"
+  },
+  {
+   "obfuscated": "AUTH_CONFIG['api']['baseUrl']+'?action=bookmark'",
+   "recovered": "`${AUTH_CONFIG.api.baseUrl}?action=bookmark`",
+   "canonical": "AUTH_CONFIG.api.baseUrl?action=bookmark"
+  },
+  {
+   "obfuscated": "CONTENT_CONFIG['dataFile']+'?t='+Date['now']()",
+   "recovered": "`${CONTENT_CONFIG.dataFile}?t=${Date.now()}`",
+   "canonical": "CONTENT_CONFIG.dataFile?t=Date.now()"
+  },
+  {
+   "obfuscated": "_0x3cc11d['file']+'?v='+timestamp",
+   "recovered": "`${_0x3cc11d.file}?v=${timestamp}`",
+   "canonical": "_0x3cc11d.file?v=timestamp"
+  },
+  {
+   "obfuscated": "_0x470ae4+'?action=xp_marker_discover'",
+   "recovered": "`${_0x470ae4}?action=xp_marker_discover`",
+   "canonical": "_0x470ae4?action=xp_marker_discover"
+  },
+  {
+   "obfuscated": "_0x50b753['toString']()",
+   "recovered": "_0x50b753.toString()",
+   "canonical": "_0x50b753.toString()"
+  },
+  {
+   "obfuscated": "sourceConfig['url']",
+   "recovered": "sourceConfig.url",
+   "canonical": "sourceConfig.url"
+  },
+  {
+   "obfuscated": "state['originalSrc']",
+   "recovered": "state.originalSrc",
+   "canonical": "state.originalSrc"
+  },
+  {
+   "obfuscated": "this['_apiUrl'](action)['toString']()",
+   "recovered": "this._apiUrl(action).toString()",
+   "canonical": "this._apiUrl(action).toString()"
+  },
+  {
+   "obfuscated": "this['_apiUrl'](action,_0x99e6dc)['toString']()",
+   "recovered": "this._apiUrl(action, _0x99e6dc).toString()",
+   "canonical": "this._apiUrl(action,_0x99e6dc).toString()"
+  },
+  {
+   "obfuscated": "this['_url']('profile_save')",
+   "recovered": "this._url('profile_save')",
+   "canonical": "this._url(profile_save)"
+  },
+  {
+   "obfuscated": "this['_url'](action)",
+   "recovered": "this._url(action)",
+   "canonical": "this._url(action)"
+  },
+  {
+   "obfuscated": "this['changelogFile']+'?v='+timestamp",
+   "recovered": "`${this.changelogFile}?v=${timestamp}`",
+   "canonical": "this.changelogFile?v=timestamp"
+  },
+  {
+   "obfuscated": "this['changelogSaveEndpoint']",
+   "recovered": "this.changelogSaveEndpoint",
+   "canonical": "this.changelogSaveEndpoint"
+  },
+  {
+   "obfuscated": "this['proxyUrl']+'?action=wiki_save_cache'",
+   "recovered": "`${this.proxyUrl}?action=wiki_save_cache`",
+   "canonical": "this.proxyUrl?action=wiki_save_cache"
+  },
+  {
+   "obfuscated": "this['url']",
+   "recovered": "this.url",
+   "canonical": "this.url"
+  }
+ ]
+}

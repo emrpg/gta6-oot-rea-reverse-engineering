@@ -1,0 +1,6 @@
+{
+ "rea_paths_not_in_regex_table": [],
+ "regex_rows_without_rea_node": [
+  "/insights"
+ ]
+}

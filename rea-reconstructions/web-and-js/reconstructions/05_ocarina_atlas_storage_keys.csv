@@ -1,0 +1,14 @@
+key_or_dynamic,storage_kind,mechanism,identity_namespace,authority,confidence,source,line
+(dynamic),cache-storage,call:caches.open,cache-storage,ast-static-analysis,exact,pwa/sw.js,37
+(dynamic),cache-storage,call:caches.open,cache-storage,ast-static-analysis,exact,pwa/sw.js,46
+(dynamic),cache-storage,call:then,cache-storage,ast-static-analysis,exact,pwa/sw.js,10
+(dynamic),local-storage,call:window.localStorage.setItem,local-storage,ast-static-analysis,exact,src/lib/i18n.ts,168
+(dynamic),local-storage,call:window.localStorage.setItem,local-storage,ast-static-analysis,exact,src/lib/storage.test.ts,142
+(dynamic),local-storage,call:window.localStorage.getItem,local-storage,ast-static-analysis,exact,src/lib/i18n.ts,151
+oot-map:v1:owned-prereqs,local-storage,call:window.localStorage.setItem,local-storage,ast-static-analysis,exact,src/lib/storage.test.ts,214
+oot-map:v1:prereq-auto-sync,local-storage,call:window.localStorage.setItem,local-storage,ast-static-analysis,exact,src/lib/storage.test.ts,210
+oot-map:v1:view-zoom,local-storage,call:window.localStorage.setItem,local-storage,ast-static-analysis,exact,src/lib/storage.test.ts,198
+oot-map:v1:view-zoom,local-storage,call:window.localStorage.setItem,local-storage,ast-static-analysis,exact,src/lib/storage.test.ts,196
+(dynamic),session-storage,call:window.sessionStorage.removeItem,session-storage,ast-static-analysis,exact,src/lib/useFullscreenMap.ts,134
+(dynamic),session-storage,call:window.sessionStorage.setItem,session-storage,ast-static-analysis,exact,src/lib/useFullscreenMap.ts,132
+(dynamic),session-storage,call:window.sessionStorage.getItem,session-storage,ast-static-analysis,exact,src/lib/useFullscreenMap.ts,122

@@ -1,0 +1,12 @@
+evidence_file,declared_path,candidate_path,limitations,authority,location_artifact,line
+npwd__app.json,dist/hooks.js,packages/npwd-hooks/dist/hooks.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,packages/npwd-hooks/package.json,
+npwd__app.json,index.js,apps/api/index.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,apps/api/package.json,
+npwd__app.json,index.js,packages/npwd-types/index.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,packages/npwd-types/package.json,
+npwd__app.json,./dist/index.js,packages/ui/dist/index.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,packages/ui/package.json,
+npwd__app.json,src/index.ts,,[],static-relationship-inference,packages/database/package.json,
+npwd__app.json,./src/index.ts,,[],static-relationship-inference,packages/logger/package.json,
+npwd__app.json,./dist/index.js,core/router/dist/index.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,core/router/package.json,
+npwd__app.json,index.js,packages/config/index.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,packages/config/package.json,
+npwd__app.json,index.js,apps/game/index.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,apps/game/package.json,
+npwd__app.json,index.js,core/query/index.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,core/query/package.json,
+noclip-website__app.json,index.js,src/Glover/parsers/kaitai-struct/index.js,"[""No extension, directory package, or index candidate exists in the inventoried artifact container.""]",static-relationship-inference,src/Glover/parsers/kaitai-struct/package.json,

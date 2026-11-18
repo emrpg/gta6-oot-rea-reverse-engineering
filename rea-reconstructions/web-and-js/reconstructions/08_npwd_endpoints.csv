@@ -1,0 +1,26 @@
+literal_or_expression,endpoint_kind,mechanism,interpretation,authority,confidence,source,line
+/npwd-contact-add,network,call:app.post,candidate,static-relationship-inference,low,apps/api/src/index.ts,19
+/npwd-contact-getAll,network,call:app.post,candidate,static-relationship-inference,low,apps/api/src/index.ts,14
+firstName,network,call:xPlayer.get,candidate,static-relationship-inference,low,apps/game/server/bridge/esx/esx-server.ts,51
+firstName,network,call:xPlayer.get,candidate,static-relationship-inference,low,apps/game/server/bridge/esx/esx-server.ts,28
+lastName,network,call:xPlayer.get,candidate,static-relationship-inference,low,apps/game/server/bridge/esx/esx-server.ts,29
+lastName,network,call:xPlayer.get,candidate,static-relationship-inference,low,apps/game/server/bridge/esx/esx-server.ts,52
+proxies[i] + url,network,call:fetch,,ast-static-analysis,exact,apps/phone/public/iframe.webcomp.js,84
+,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/new-notifications/state.ts,19
+/browser,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,94
+/calculator,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,140
+/camera,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,207
+/contacts,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,129
+/darkchat,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,118
+/example,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,220
+/marketplace,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,182
+/match,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/apps/match/hooks/useMatchService.ts,42
+/match,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,162
+/match/matches,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/apps/match/hooks/useMatchNotifications.ts,19
+/messages,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,107
+/notes,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,198
+/phone,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,87
+/settings,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,151
+/twitter,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/os/apps/config/apps.tsx,171
+/twitter,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/apps/twitter/hooks/useTwitterService.ts,49
+/twitter,route,property:path,candidate,static-relationship-inference,low,apps/phone/src/apps/twitter/hooks/useTwitterService.ts,62

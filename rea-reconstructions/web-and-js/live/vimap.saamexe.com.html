@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+    <base href="/">
+    <title id="page-title">State of Leonida</title>
+    
+    <meta name="description" content="State of Leonida - The interactive GTA 6 map by the Mapping Community. Explore all locations, landmarks, trailer screenshots and real-life comparisons in Leonida (Vice City).">
+    <meta name="author" content="State of Leonida">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://map.stateofleonida.net/en/">
+    
+    <link rel="alternate" hreflang="de" href="https://map.stateofleonida.net/de/">
+    <link rel="alternate" hreflang="en" href="https://map.stateofleonida.net/en/">
+    <link rel="alternate" hreflang="x-default" href="https://map.stateofleonida.net/en/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://map.stateofleonida.net/en/">
+    <meta property="og:title" content="State of Leonida - Interactive GTA 6 Map">
+    <meta property="og:description" content="State of Leonida - The interactive GTA 6 map by the Mapping Community. Explore all locations, landmarks, trailer screenshots and real-life comparisons in Leonida (Vice City).">
+    <meta property="og:image" content="https://map.stateofleonida.net/assets/logos/favicon/web-app-manifest-512x512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="State of Leonida">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:site_name" content="State of Leonida">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://map.stateofleonida.net/en/">
+    <meta name="twitter:title" content="State of Leonida - Interactive GTA 6 Map">
+    <meta name="twitter:description" content="State of Leonida - The interactive GTA 6 map by the Mapping Community. Explore all locations, landmarks, trailer screenshots and real-life comparisons in Leonida (Vice City).">
+    <meta name="twitter:image" content="https://map.stateofleonida.net/assets/logos/favicon/web-app-manifest-512x512.png">
+    <meta name="twitter:image:alt" content="State of Leonida">
+    <meta name="twitter:site" content="@stateofleonida">
+    
+    <script type="application/ld+json">{"@type":"Organization","name":"State of Leonida","url":"https://map.stateofleonida.net","logo":"https://map.stateofleonida.net/assets/logos/favicon/web-app-manifest-512x512.png","@context":"https://schema.org"}</script>
+    <script type="application/ld+json">{"@type":"WebSite","name":"State of Leonida","url":"https://map.stateofleonida.net","@context":"https://schema.org","publisher":{"@type":"Organization","name":"State of Leonida"}}</script>
+    <script type="application/ld+json">{"@type":"WebApplication","name":"State of Leonida","alternateName":"GTA 6 Interactive Map","applicationCategory":"GameApplication","operatingSystem":"Web Browser","description":"State of Leonida – The interactive GTA 6 map by the Mapping Community. All known locations, landmarks and real-life comparisons.","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"@context":"https://schema.org","url":"https://map.stateofleonida.net","author":{"@type":"Organization","name":"State of Leonida"}}</script>
+    <link rel="icon" type="image/png" href="assets/logos/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/logos/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/logos/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logos/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="State of Leonida" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#0a0a10" />
+    <meta name="theme-color" content="#0a0a10" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#0a0a10" media="(prefers-color-scheme: light)" />
+    <link rel="manifest" href="assets/logos/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="assets/libs/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="assets/libs/leaflet-markercluster/MarkerCluster.css" />
+    <link rel="stylesheet" href="assets/libs/leaflet-markercluster/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="assets/libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="solmain2809_2.css">
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .site-header { visibility: hidden; }
+        .site-header.loaded { visibility: visible; }
+    </style>
+	
+	    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1483703580037210"
+        crossorigin="anonymous">
+    </script>
+</head>
+<body class="mobile-ui-booting">
+    <div class="preloader">
+        <div class="preloader-site-bg" id="preloader-site-bg" aria-hidden="true"></div>
+        <div class="preloader-background">
+            <div class="preloader-background-inner">
+                <div class="preloader-background-layer"></div>
+            </div>
+        </div>
+        <div class="preloader-content">
+            <img src="assets/logos/logo.svg" alt="Logo" class="preloader-logo">
+            <div class="preloader-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Loading">
+                <div class="preloader-progress-fill progress-bar"></div>
+            </div>
+        </div>
+        <div class="preloader-footer">
+            <img src="assets/logos/affiliated with.png" alt="Affiliated with" class="preloader-affiliated">
+            <div class="preloader-credits">
+                <a class="credits-item credits-gtadb" href="https://map.gtadb.org" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/pic/gtamaplib.png" alt="GTA Maplib" class="credits-logo">
+                    <div class="credits-info">
+                        <div class="credits-title">MAP.GTADB.ORG</div>
+                        <div class="credits-subtitle">USE DATABASE</div>
+                    </div>
+                </a>
+                <a class="credits-item credits-gtawiki" href="https://gta.wiki" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/logos/Wiki.png" alt="GTA Wiki" class="credits-logo">
+                    <div class="credits-info">
+                        <div class="credits-title">GTA.WIKI</div>
+                        <div class="credits-subtitle">FIND ON MARKERS</div>
+                    </div>
+                </a>
+            </div>
+            <div class="preloader-disclaimer">
+                <span class="preloader-disclaimer-line">
+                    <a href="https://www.rockstargames.com" target="_blank" rel="noopener noreferrer">Rockstar Games</a> and <a href="https://www.rockstargames.com/gta-vi" target="_blank" rel="noopener noreferrer">Grand Theft Auto</a> are registered trademarks of <a href="https://www.take2games.com" target="_blank" rel="noopener noreferrer">Take-Two Interactive Software&nbsp;Inc.</a>
+                </span>
+                <span class="preloader-disclaimer-line">
+                    State of Leonida are not affiliated, in any way, shape or form, with the aforementioned companies.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <a href="#" class="header-logo">
+            <img src="assets/logos/Logo.png" alt="State of Leonida" class="header-logo-icon">
+        </a>
+        <div class="header-separator-left"></div>
+        <a href="https://discord.gg/gta-mapping" target="_blank" rel="noopener noreferrer"
+           class="header-mapping-center" id="header-mapping-btn">
+            <img src="assets/logos/mappingcool2.gif" alt="Mapping Discord" class="mapping-video">
+        </a>
+        <div class="header-separator-right"></div>
+        <div class="header-right" id="header-auth-slot"></div>
+        <div class="gta-countdown-wrapper" id="gta-countdown-wrapper" style="display:none">
+            <div class="gta-countdown" id="gta-countdown">
+                <img src="assets/logos/gtavi.png" alt="GTA VI" class="gta-countdown-logo">
+                <div class="gta-countdown-timer">
+                    <div class="gta-countdown-value" id="countdown-days">000</div>
+                    <div class="gta-countdown-separator">:</div>
+                    <div class="gta-countdown-value" id="countdown-hours">00</div>
+                    <div class="gta-countdown-separator">:</div>
+                    <div class="gta-countdown-value" id="countdown-minutes">00</div>
+                    <div class="gta-countdown-separator">:</div>
+                    <div class="gta-countdown-value" id="countdown-seconds">00</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="map"></div>
+    <div id="coordinates">X: 0.000, Y: 0.000</div>
+
+    <script src="assets/libs/leaflet/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="assets/libs/fancybox/fancybox.umd.js"></script>
+    <script src="solmain2809_4.js"></script>
+	
+	<script>
+(function () {
+  function enableTrailer3() {
+    var src = (typeof MARKER_SOURCES_CONFIG !== 'undefined')
+      ? MARKER_SOURCES_CONFIG
+      : window.MARKER_SOURCES_CONFIG;
+    if (!src || !src.trailer3_markers) return false;
+    src.trailer3_markers.enabled = true;
+    var mm = window.mapManager && window.mapManager.markerManager;
+    if (mm && typeof mm.loadSource === 'function' && !mm.sources.trailer3_markers) {
+      mm.loadSource(src.trailer3_markers);
+    }
+    return true;
+  }
+  if (enableTrailer3()) return;
+  var n = 0;
+  var t = setInterval(function () {
+    if (enableTrailer3() || ++n > 100) clearInterval(t);
+  }, 50);
+})();
+</script>
+<script>
+(function () {
+    'use strict';
+
+    const SLOT_TOP = '5961457350';
+    const HOST_ID = 'panel-top-ad-host';
+    const AD_HEIGHT = 90;
+    const MAX_TRIES = 60;
+
+    function clientId() {
+        return window.AdsenseRuntime?.CLIENT_ID || 'ca-pub-1483703580037210';
+    }
+
+    function featureOn() {
+        if (typeof window.AdsenseRuntime?.isFeatureEnabled === 'function') {
+            return window.AdsenseRuntime.isFeatureEnabled() === true;
+        }
+        return true;
+    }
+
+    function demoOn() {
+        return !!window.AdsenseRuntime?.isDemoMode?.();
+    }
+
+    function captionText() {
+        return (window.t && window.t('footer.adSupportCaption', 'Little support ad')) || 'Little support ad';
+    }
+
+    function ensureStyles() {
+        if (document.getElementById('adsense-panel-top-override-css')) return;
+        const style = document.createElement('style');
+        style.id = 'adsense-panel-top-override-css';
+        style.textContent = `
+            .panel-ad-zone--top-override{margin-top:14px;padding-top:10px;padding-bottom:4px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:6px}
+            .panel-ad-zone--top-override[hidden]{display:none!important}
+            .panel-ad-zone--top-override .footer-ad-caption{margin:0;display:flex;align-items:center;justify-content:center;gap:6px;font-family:Montserrat,sans-serif;font-size:11px;font-weight:600;letter-spacing:.2px;color:rgba(255,255,255,.5);user-select:none}
+            .panel-ad-zone--top-override .footer-ad-host{width:100%;max-height:100px;overflow:hidden}
+            .panel-ad-zone--top-override .footer-ad-host[hidden],
+            .panel-ad-zone--top-override .footer-ad-host.footer-ad-host--unfilled{display:none!important;max-height:0!important}
+            .panel-ad-zone--top-override .footer-ad-slot .adsbygoogle{display:block!important;width:100%!important;height:${AD_HEIGHT}px!important;max-height:${AD_HEIGHT}px!important;overflow:hidden!important}
+            .panel-ad-zone--top-override .footer-ad-demo{display:flex;align-items:center;justify-content:center;gap:8px;height:${AD_HEIGHT}px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.55);font:600 11px Montserrat,sans-serif}
+        `;
+        document.head.appendChild(style);
+    }
+
+    function watchUnfilled(ins, host) {
+        if (!ins || !host || ins.dataset.adStatusWatch === '1') return;
+        ins.dataset.adStatusWatch = '1';
+        const sync = () => {
+            const status = ins.getAttribute('data-ad-status');
+            if (status === 'unfilled') {
+                host.hidden = true;
+                host.classList.add('footer-ad-host--unfilled');
+                host.closest('.panel-ad-zone--top-override')?.setAttribute('hidden', '');
+            } else if (status === 'filled') {
+                host.hidden = false;
+                host.classList.remove('footer-ad-host--unfilled');
+                host.closest('.panel-ad-zone--top-override')?.removeAttribute('hidden');
+            }
+        };
+        sync();
+        if (typeof MutationObserver === 'function') {
+            new MutationObserver(sync).observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
+            setTimeout(sync, 2500);
+            setTimeout(sync, 6000);
+        }
+    }
+
+    function mountDemo(host) {
+        if (host.querySelector('.footer-ad-slot--demo')) return true;
+        host.innerHTML = '';
+        const wrap = document.createElement('div');
+        wrap.className = 'footer-ad-slot footer-ad-slot--demo';
+        wrap.innerHTML = `<div class="footer-ad-demo"><i class="fas fa-rectangle-ad" aria-hidden="true"></i><span>Ad · Preview</span></div>`;
+        host.appendChild(wrap);
+        host.hidden = false;
+        return true;
+    }
+
+    function pushWhenReady(ins, host) {
+        const tryPush = () => {
+            if (!ins.isConnected) return;
+            if (ins.dataset.adsenseFilled === '1') return;
+            if (ins.getAttribute('data-adsbygoogle-status') === 'done') {
+                ins.dataset.adsenseFilled = '1';
+                watchUnfilled(ins, host);
+                return;
+            }
+            try {
+                ins.dataset.adsenseFilled = '1';
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
+                watchUnfilled(ins, host);
+            } catch (e) {
+                delete ins.dataset.adsenseFilled;
+                console.warn('[adsense-panel-top-override] push failed', e);
+            }
+        };
+
+        if (window.AdsenseRuntime?.whenReady) {
+            window.AdsenseRuntime.whenReady().then(() => {
+                requestAnimationFrame(() => requestAnimationFrame(tryPush));
+            });
+            return;
+        }
+        setTimeout(tryPush, 800);
+    }
+
+    function mountLive(host) {
+        if (host.querySelector('ins.adsbygoogle[data-ad-slot="' + SLOT_TOP + '"]')) {
+            host.hidden = false;
+            return true;
+        }
+        host.innerHTML = '';
+        const wrap = document.createElement('div');
+        wrap.className = 'footer-ad-slot';
+        const ins = document.createElement('ins');
+        ins.className = 'adsbygoogle';
+        ins.style.display = 'block';
+        ins.style.width = '100%';
+        ins.style.height = AD_HEIGHT + 'px';
+        ins.style.maxHeight = AD_HEIGHT + 'px';
+        ins.style.overflow = 'hidden';
+        ins.setAttribute('data-ad-client', clientId());
+        ins.setAttribute('data-ad-slot', SLOT_TOP);
+        ins.setAttribute('data-ad-format', 'horizontal');
+        ins.setAttribute('data-full-width-responsive', 'false');
+        wrap.appendChild(ins);
+        host.appendChild(wrap);
+        host.hidden = false;
+        pushWhenReady(ins, host);
+        return true;
+    }
+
+    function ensureZone(grid) {
+        let zone = document.querySelector('.panel-ad-zone--top-override');
+        if (zone) return zone;
+
+        zone = document.createElement('section');
+        zone.className = 'panel-ad-zone panel-ad-zone--top-override';
+        zone.setAttribute('aria-label', captionText());
+        zone.innerHTML = `
+            <p class="footer-ad-caption">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+                <span>${captionText()}</span>
+            </p>
+            <div class="footer-ad-host" id="${HOST_ID}" hidden></div>
+        `;
+        grid.insertAdjacentElement('afterend', zone);
+        return zone;
+    }
+
+    function place(tries) {
+        if (document.getElementById(HOST_ID)?.querySelector('.footer-ad-slot')) return;
+
+        const grid = document.querySelector('.rockstar-maps-grid');
+        if (!grid) {
+            if (tries < MAX_TRIES) setTimeout(() => place(tries + 1), 250);
+            return;
+        }
+
+        if (!featureOn() && !demoOn()) return;
+
+        ensureStyles();
+        const zone = ensureZone(grid);
+        const host = zone.querySelector('#' + HOST_ID);
+        if (!host) return;
+
+        if (window.AdsenseRuntime?.mountControlPanelTop) {
+            const mounted = window.AdsenseRuntime.mountControlPanelTop(host);
+            host.hidden = !mounted;
+            zone.toggleAttribute('hidden', !mounted);
+            return;
+        }
+
+        const ok = demoOn() ? mountDemo(host) : mountLive(host);
+        zone.toggleAttribute('hidden', !ok);
+    }
+
+    function boot() {
+        place(0);
+        document.addEventListener('siteSettingsChanged', () => {
+            const host = document.getElementById(HOST_ID);
+            const zone = host?.closest('.panel-ad-zone--top-override');
+            if (!featureOn() && !demoOn()) {
+                if (host) {
+                    host.innerHTML = '';
+                    host.hidden = true;
+                }
+                zone?.setAttribute('hidden', '');
+                return;
+            }
+            place(0);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', boot);
+    } else {
+        boot();
+    }
+})();
+
+</script>
+
+	
+</body>
+</html>

@@ -1,0 +1,2 @@
+literal_or_expression,endpoint_kind,mechanism,interpretation,authority,confidence,source,line
+static_arc.crg1,network,call:archiveCache.get,candidate,static-relationship-inference,low,src/BanjoTooie/scenes.ts,335

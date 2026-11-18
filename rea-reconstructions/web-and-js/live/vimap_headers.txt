@@ -1,0 +1,9 @@
+HTTP/2 308 
+date: Wed, 18 Nov 2026 09:09:53 GMT
+content-type: text/html; charset=UTF-8
+location: https://map.stateofleonida.net/
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rBLUsMvIali1p2ngFc1TsBtYQRzRBMQrQrC0p%2FSx1r6hp9oupk1eZ%2BmoMn8O%2FFB5Jab84w9EAlrxqQrDGR0fKi7VYM3LzmXZ32xr06zXtHro0ncIYwSDaYra2eXoDaiVDQnYHw%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a5c5d6c2ad725e64-EWR
+

@@ -1,0 +1,12 @@
+literal_or_expression,endpoint_kind,mechanism,resolution,authority,confidence,source,line
+/api/lichii/state,network,call:fetch,,ast-static-analysis,exact,src/lib/useLichiiTracker.ts,806
+/api/lichii/stream,network,call:EventSource,,ast-static-analysis,exact,src/lib/useLichiiTracker.ts,885
+/api/sync/state,network,call:fetch,,ast-static-analysis,exact,src/lib/storage.ts,276
+/api/sync/state,network,call:fetch,,ast-static-analysis,exact,src/lib/storage.ts,206
+`https://api.github.com/repos/${safeSlug}/releases/generate-notes`,network,call:fetch,partial,ast-static-analysis,exact,scripts/generate-release-notes.mjs,113
+endpoint,network,call:fetch,partial,ast-static-analysis,exact,scripts/generate-release-notes.mjs,142
+https://api.openai.com/v1/chat/completions,network,call:fetch,,ast-static-analysis,exact,scripts/generate-release-notes.mjs,170
+request,network,call:fetch,partial,ast-static-analysis,exact,pwa/sw.js,41
+request,network,call:fetch,partial,ast-static-analysis,exact,pwa/sw.js,49
+/,route,property:path,,static-relationship-inference,low,src/routeTree.gen.ts,17
+/$zone,route,property:path,,static-relationship-inference,low,src/routeTree.gen.ts,22

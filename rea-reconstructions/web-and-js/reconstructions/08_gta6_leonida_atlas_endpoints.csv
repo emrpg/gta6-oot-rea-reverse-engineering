@@ -1,0 +1,21 @@
+literal_or_expression,endpoint_kind,mechanism,interpretation,authority,confidence,source,line
+GET,network,call:request,candidate,static-relationship-inference,low,scripts/publish-release.mjs,267
+GET,network,call:request,candidate,static-relationship-inference,low,scripts/publish-release.mjs,245
+GET,network,call:request,candidate,static-relationship-inference,low,scripts/publish-release.mjs,164
+GET,network,call:request,candidate,static-relationship-inference,low,scripts/publish-release.mjs,201
+GET,network,call:request,candidate,static-relationship-inference,low,scripts/publish-release.mjs,192
+PATCH,network,call:request,candidate,static-relationship-inference,low,scripts/publish-release.mjs,265
+POST,network,call:request,candidate,static-relationship-inference,low,scripts/publish-release.mjs,229
+`${base.endsWith('/') ? base : `${base}/`}assets/street-leonida/maps/gtadb-landmarks-5c1d69f.json`,network,call:fetch,,ast-static-analysis,exact,src/data/catalogue.ts,117
+env.E2E_BASE_URL,network,call:fetch,,ast-static-analysis,exact,scripts/test-fork.mjs,92
+https://raw.githubusercontent.com/rolux/gtadb.org/5c1d69ff864623d181da5457afaacd00b623e1a4/map/data/6/landmarks.json,network,call:globalThis.fetch,,ast-static-analysis,exact,scripts/sync-gtadb-landmarks.mjs,118
+layer,network,call:params.get,candidate,static-relationship-inference,low,src/features/street-leonida/url-state.ts,52
+page,network,call:params.get,candidate,static-relationship-inference,low,src/app/routes.ts,15
+place,network,call:params.get,candidate,static-relationship-inference,low,src/app/routes.ts,27
+preferences,network,call:preferences.get,candidate,static-relationship-inference,low,src/db/repository.ts,122
+preferences,network,call:get,candidate,static-relationship-inference,low,src/db/repository.ts,70
+t,network,call:params.get,candidate,static-relationship-inference,low,src/features/street-leonida/url-state.ts,40
+view,network,call:params.get,candidate,static-relationship-inference,low,src/app/routes.ts,25
+x,network,call:params.get,candidate,static-relationship-inference,low,src/features/street-leonida/url-state.ts,43
+y,network,call:params.get,candidate,static-relationship-inference,low,src/features/street-leonida/url-state.ts,44
+z,network,call:params.get,candidate,static-relationship-inference,low,src/features/street-leonida/url-state.ts,50
